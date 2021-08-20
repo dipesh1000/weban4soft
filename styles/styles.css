@@ -23,7 +23,7 @@ a:hover {
   padding: .4em 2.5em .4em 1em;
   border-radius: 20px;
   background-color: #FF4500;
-  color: #fff;
+  color: #fff !important;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
           box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   position: relative;
@@ -219,5 +219,49 @@ Header .side_Toggle_Box .active {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.home_section_layout {
+  padding: 70px 0;
+}
+
+.our_concepts {
+  background-image: url("/img/mud-pot.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.our_concepts .home_section_titles {
+  max-width: 341px;
+}
+
+.our_concepts .home_section_titles small {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.our_concepts .home_section_titles small img {
+  margin-top: 20px;
+}
+
+.our_concepts .home_section_titles h1 {
+  color: #111;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.our_concepts .home_section_titles h1 span {
+  color: #FF4500;
+}
+
+.our_concepts .section_contents {
+  padding-top: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: justify;
+  padding-bottom: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
