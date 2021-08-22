@@ -291,6 +291,10 @@ Header .side_Toggle_Box .active {
   text-align: center;
 }
 
+.service_box .tabs-area .nav-tabs .nav-item .service_Item {
+  margin-bottom: 15px;
+}
+
 .service_box .tabs-area .nav-tabs .nav-item .service_Item span {
   color: #FF4500;
 }
@@ -317,7 +321,7 @@ Header .side_Toggle_Box .active {
 
 .service_box .tabs-area .nav-tabs .owl-nav button {
   position: absolute;
-  top: 0;
+  top: 19px;
 }
 
 .service_box .tabs-area .nav-tabs .owl-nav button.owl-prev {
@@ -359,11 +363,157 @@ Header .side_Toggle_Box .active {
   color: #111;
 }
 
+.service_box .tabs-area .service_inner_box .img_box {
+  width: 100%;
+  padding: 20px;
+}
+
+.service_box .tabs-area .service_inner_box .img_box img {
+  width: 100%;
+}
+
 .service_box .tabs-area .service_inner_box .service_in_List {
-  padding-top: 40px;
+  padding-top: 50px;
+}
+
+.service_box .tabs-area .service_inner_box .service_in_List li {
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.service_box .tabs-area .service_inner_box .service_in_List li.service_title {
+  margin-bottom: 15px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .service_box .tabs-area .service_inner_box .service_in_List li::marker {
   color: #FF4500;
+}
+
+.we_serve_box {
+  background-image: url("/img/industry-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  position: relative;
+  background: #f9f9f9;
+}
+
+.we_serve_box .serve_inner_box {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.we_serve_box .serve_inner_box .nav-pills {
+  margin-bottom: 35px !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item {
+  max-width: 120px;
+  text-align: center;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:first-child {
+  padding-left: 0;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:last-child {
+  padding-right: 0;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link .icon_by_sector {
+  font-size: 25px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 65px;
+  margin: 0 auto 15px auto;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link .icon_by_sector i {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link span {
+  text-align: center;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active {
+  background-color: transparent;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector {
+  color: #fff;
+  background-color: #FF4500;
+  border-radius: 3px;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector i {
+  color: #fff;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active span {
+  color: #00225F;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover {
+  background-color: transparent;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector {
+  color: #fff;
+  background-color: #FF4500;
+  border-radius: 3px;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector i {
+  color: #fff;
+}
+
+.we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover span {
+  color: #00225F;
+}
+
+.we_serve_box .serve_inner_box .serve_conent_box {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+}
+
+.we_serve_box .serve_inner_box .serve_conent_box h5 {
+  font-weight: 600;
+}
+
+.we_serve_box .serve_inner_box .serve_conent_box .service_list_box {
+  margin-left: 15px;
+}
+
+.we_serve_box .serve_inner_box .serve_conent_box .service_list_box li {
+  margin-bottom: 15px;
+}
+
+.we_serve_box .serve_inner_box .serve_conent_box .service_list_box li::marker {
+  color: #FF4500;
+}
+
+.we_serve_box .serve_inner_box .image_container {
+  text-align: center;
+}
+
+.we_serve_box .serve_inner_box .image_container i {
+  font-size: 120px;
+  color: #FF4500;
+}
+
+.we_serve_box .bg_img-industry {
+  background-image: url("/img/industry-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 /*# sourceMappingURL=styles.css.map */
