@@ -47,6 +47,15 @@ a:hover {
   top: 3px;
 }
 
+.trans_btn {
+  color: #FF4500;
+  text-transform: uppercase;
+}
+
+.trans_btn img {
+  width: 60px;
+}
+
 Header {
   position: relative;
   height: 100vh;
@@ -229,17 +238,11 @@ Header .side_Toggle_Box .active {
   padding: 70px 0;
 }
 
-.our_concepts {
-  background-image: url("/img/mud-pot.png");
-  background-size: cover;
-  background-position: center;
+.home_section_layout .home_section_titles {
+  margin-bottom: 20px;
 }
 
-.our_concepts .home_section_titles {
-  max-width: 341px;
-}
-
-.our_concepts .home_section_titles small {
+.home_section_layout .home_section_titles small {
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -247,19 +250,30 @@ Header .side_Toggle_Box .active {
   color: rgba(0, 0, 0, 0.4);
 }
 
-.our_concepts .home_section_titles small img {
+.home_section_layout .home_section_titles small img {
   margin-top: 20px;
 }
 
-.our_concepts .home_section_titles h1 {
+.home_section_layout .home_section_titles small.subtitles {
+  line-height: 20px;
+}
+
+.home_section_layout .home_section_titles h1 {
+  max-width: 341px;
   color: #111;
   font-weight: 700;
   font-size: 36px;
   line-height: 50px;
 }
 
-.our_concepts .home_section_titles h1 span {
+.home_section_layout .home_section_titles h1 span {
   color: #FF4500;
+}
+
+.our_concepts {
+  background-image: url("/img/mud-pot.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .our_concepts .section_contents {
@@ -267,5 +281,89 @@ Header .side_Toggle_Box .active {
   color: rgba(0, 0, 0, 0.6);
   text-align: justify;
   padding-bottom: 40px;
+}
+
+.service_box .tabs-area .nav-tabs {
+  border: none;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item {
+  text-align: center;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item .service_Item span {
+  color: #FF4500;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item .nav-link i {
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 50%;
+  padding: .34em .45em;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item .nav-link.active {
+  border: none;
+  color: #FF4500;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item .nav-link.active i {
+  border-color: #FF4500;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item .nav-link:hover {
+  border: none;
+}
+
+.service_box .tabs-area .nav-tabs .owl-nav button {
+  position: absolute;
+  top: 0;
+}
+
+.service_box .tabs-area .nav-tabs .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.service_box .tabs-area .nav-tabs .owl-nav button.owl-next {
+  right: 0;
+}
+
+.service_box .tabs-area .nav-tabs .owl-nav button span {
+  font-size: 53px;
+}
+
+.service_box .tabs-area .nav-tabs .owl-nav button:focus {
+  outline: none;
+}
+
+.service_box .tabs-area .service_inner_box {
+  padding: 30px 0;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.service_box .tabs-area .service_inner_box .service_title h2 {
+  max-width: 200px;
+  color: #111;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.service_box .tabs-area .service_inner_box .service_title h2 span {
+  color: #FF4500;
+}
+
+.service_box .tabs-area .service_inner_box .service_title .text_bolder {
+  font-weight: 600;
+  color: #111;
+}
+
+.service_box .tabs-area .service_inner_box .service_in_List {
+  padding-top: 40px;
+}
+
+.service_box .tabs-area .service_inner_box .service_in_List li::marker {
+  color: #FF4500;
 }
 /*# sourceMappingURL=styles.css.map */

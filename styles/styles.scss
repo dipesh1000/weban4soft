@@ -47,6 +47,13 @@ a {
         top: 3px;
     }
 }
+.trans_btn {
+    color: $primary;
+    text-transform: uppercase;
+    img {
+        width: 60px;
+    }
+}
 Header {
     position: relative;
     height: 100vh;
@@ -205,13 +212,8 @@ Header {
 }
 .home_section_layout {
     padding: 70px 0;
-}
-.our_concepts {
-    background-image: url('/img/mud-pot.png');
-    background-size: cover;
-    background-position: center;
     .home_section_titles {
-        max-width: 341px;
+        margin-bottom: 20px;
         small {
             font-style: normal;
             font-weight: 300;
@@ -221,8 +223,12 @@ Header {
             img {
                 margin-top: 20px;
             }
+            &.subtitles {
+                line-height: 20px;
+            }
         }
         h1 {
+            max-width: 341px;
             color: $heading;
             font-weight: 700;
             font-size: 36px;
@@ -232,10 +238,97 @@ Header {
             }
         }
     }
+}
+.our_concepts {
+    background-image: url('/img/mud-pot.png');
+    background-size: cover;
+    background-position: center;
+    
     .section_contents {
         padding-top: 20px;
         color: $content;
         text-align: justify;
         padding-bottom: 40px;
+    }
+}
+.service_box {
+    .tabs-area {
+        .nav-tabs {
+            border: none;
+            .nav-item {
+                text-align: center;
+                .service_Item {
+                    span {
+                        color: $primary;
+                    }
+                }
+                .nav-link {
+                    i {
+                        border: 1px solid;
+                        border-color: transparent;
+                        border-radius: 50%;
+                        padding: .34em .45em;
+                    }
+                    &.active {
+                        border: none;
+                        color: $primary;
+                        i {
+                            border-color: $primary;
+                        }
+                    }
+                    &:hover {
+                        border: none;
+                    }
+                }
+            }
+            .owl-nav {
+                button {
+                    position: absolute;
+                    top: 0;
+                    &.owl-prev {
+                        left: 0;
+                    }
+                    &.owl-next {
+                        right: 0;
+                    }
+                    span {
+                        font-size: 53px;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            
+        }
+        .service_inner_box {
+            padding: 30px 0;
+            font-size: 15px;
+            color: $content;
+            .service_title {
+                h2 {
+                    max-width: 200px;
+                    color: $heading;
+                    font-weight: 600;
+                    font-size: 30px;
+                    line-height: 40px;
+                    span {
+                    color: $primary;
+                    }
+                }
+                .text_bolder {
+                    font-weight: 600;
+                    color: $heading;
+                }
+            }
+            .service_in_List {
+                padding-top: 40px;
+                li {
+                    &::marker { 
+                        color: $primary;
+                    }
+                }
+            }
+        }
     }
 }
