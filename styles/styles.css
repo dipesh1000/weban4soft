@@ -24,6 +24,7 @@ a:hover {
   border-radius: 20px;
   background-color: #FF4500;
   color: #fff !important;
+  display: inline-block;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
           box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   position: relative;
@@ -397,7 +398,7 @@ Header .side_Toggle_Box .active {
   background-position: left;
   background-repeat: no-repeat;
   position: relative;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
 }
 
 .we_serve_box .serve_inner_box {
@@ -515,5 +516,105 @@ Header .side_Toggle_Box .active {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.work_box {
+  background-color: #F2F2F2;
+}
+
+.work_box .works_main_contents {
+  display: inline-block;
+  -webkit-columns: 2;
+          columns: 2;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 15px;
+  margin-bottom: 40px;
+  line-height: 25px;
+}
+
+.work_box .works_main_contents p {
+  line-height: 25px;
+}
+
+.work_box .work_showcase {
+  margin-bottom: 40px;
+}
+
+.work_box .work_showcase .work_showcase_content {
+  text-align: right;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.work_box .work_showcase .work_showcase_content p {
+  line-height: 25px;
+}
+
+.work_box .work_showcase .work_showcase_content .round_Btn {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.work_box .work_showcase .work_showcase_content .round_Btn:hover {
+  background-color: #FF4500;
+  color: #fff !important;
+}
+
+.work_box .work_showcase .image_container {
+  width: 100%;
+}
+
+.work_box .work_showcase .image_container img {
+  width: 100%;
+}
+
+Footer img {
+  padding-top: 15px;
+  width: 100%;
+}
+
+Footer .bottom_quick_links .menu_group h6 {
+  color: #111;
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+Footer .bottom_quick_links .menu_group .menu_items {
+  font-size: 15px;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+Footer .bottom_quick_links .menu_group .menu_items li {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+Footer .bottom_quick_links .menu_group .menu_items li a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+Footer .bottom_quick_links .menu_group.las_menu {
+  padding-left: 100px;
+}
+
+Footer .bottom_quick_links .menu_group.third_menu {
+  padding-left: 50px;
+}
+
+Footer .bottom_quick_links .menu_group.second_menu {
+  padding-left: 20px;
+}
+
+Footer .copy_right {
+  border-top: 1px solid #ddd;
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
 }
 /*# sourceMappingURL=styles.css.map */

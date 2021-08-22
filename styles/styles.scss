@@ -28,6 +28,7 @@ a {
     border-radius: 20px;
     background-color: $primary;
     color: #fff!important;
+    display: inline-block;
     box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;  
     position: relative;
     &:hover {
@@ -353,7 +354,7 @@ Header {
     background-position: left;
     background-repeat: no-repeat;
     position: relative;
-    background: #f9f9f9;
+    background-color: #f9f9f9;
     .serve_inner_box {
         width: 960px;
         margin: 0 auto;
@@ -446,5 +447,91 @@ Header {
         position: absolute;
         top: 0;
         right: 0;
+    }
+}
+.work_box {
+    background-color: #F2F2F2;
+    .works_main_contents {
+        display: inline-block;
+        columns: 2;
+        color: $content;
+        font-size: 15px;
+        margin-bottom: 40px;
+        line-height: 25px;
+        p {
+            line-height: 25px;
+        }
+    }
+    .work_showcase {
+        margin-bottom: 40px;
+        .work_showcase_content {
+            text-align: right;
+            font-size: 15px;
+            color: $content;
+            p {
+                line-height: 25px;
+            }
+            .round_Btn {
+                background-color: transparent;
+                color:rgba(0, 0, 0, 0.6)!important;
+                border: 1px solid #ddd;
+                font-weight: 500;
+                &:hover {
+                    background-color: $primary;
+                    color: #fff!important;
+                }
+            }
+        }
+        .image_container {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+Footer {
+    img {
+        padding-top: 15px;
+        width: 100%;
+    }
+    .bottom_quick_links {
+        .menu_group {
+            h6 {
+                color: $heading;
+                font-weight: 700;
+                font-size: 17px;
+                margin-bottom: 20px;
+            }
+            .menu_items {
+                font-size: 15px;
+                list-style: none;
+                color: $content;
+                li {
+                    text-align: left;
+                    color: $content;
+                    margin-bottom: 10px;
+                    a {
+                        color: $content;
+                    }
+                }
+            }
+            &.las_menu {
+                padding-left: 100px;
+            }
+            &.third_menu {
+                padding-left: 50px;
+            }
+            &.second_menu {
+                padding-left: 20px;
+            }
+        }
+    }
+    .copy_right {
+        border-top: 1px solid #ddd;
+        margin-top: 1em;
+        padding: 1em;
+        text-align: center;
+        color: $content;
     }
 }
