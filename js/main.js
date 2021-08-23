@@ -8,8 +8,10 @@
       });
 })(jQuery);
 
+
 $(document).ready(function(){
-  var owl = $('.owl-carousel');
+  var owl = $('.services');
+  var blog = $('#blogs')
   owl.owlCarousel({
     items:4, 
   // items change number for slider display on desktop
@@ -17,7 +19,15 @@ $(document).ready(function(){
     margin:10,
     autoplay:false,
     nav: true,
-});
+  });
+  blog.owlCarousel({
+    items:1, 
+  // items change number for slider display on desktop
+    loop:true,
+    margin:10,
+    autoplay:false,
+    nav: true,
+  });
 });
 
 $(document).ready(function(){

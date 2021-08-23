@@ -490,6 +490,72 @@ Header {
         }
     }
 }
+.blog_box {
+    background-color: $secondary;
+    .home_section_titles {
+        small {
+            color: #fff;
+        }
+        h1 {
+            max-width: 600px;
+            color: #fff;
+            span {
+                color: #fff;
+            }
+        }
+    }
+    .blog_item_slider {
+        .blog_items {
+            .blog_item {
+                background-color: #fff;
+                height: 450px;
+                overflow: hidden;
+                .image_box {
+                    width: 100%;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .blog_content_box {
+                    height: 450px;
+                    color: $content;
+                    .blog_contents {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .published {
+                            margin-bottom: 15px;
+                            span {
+                                display: block;
+                            }
+                        }
+                        .blog__content {
+                            margin-bottom: 15px;
+                            h4 {
+                                color: $primary;
+                                font-size: 20px;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+            .owl-nav {
+                color: #fff;
+                button {
+                    &:focus {
+                        outline: none;
+                    }
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        } 
+    }
+}
 Footer {
     img {
         padding-top: 15px;
