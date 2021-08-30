@@ -8,6 +8,25 @@
       });
 })(jQuery);
 
+(function($) {
+  $('.testinomial_container').on('click', function(e) {
+      e.preventDefault();
+      var active = $(this).hasClass('active');
+      var className = $('.testinomial_content_img').attr('class');
+      var parent = $(this).parents('.testinomial_box');
+      if (!active) {
+        var activeBlock = parent.find('.testinomial_container.active');
+        var activeBlock = parent.find('.testinomial_container.active');
+        var currentPos = $(this).attr('data-position');
+        var newPos = activeBlock.attr('data-position');
+        console.log(newPos, "From current pos");
+        activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(currentPos);
+        activeBlock.attr('data-position', currentPos);
+        $(this).addClass('active').removeClass('inactive').removeClass(currentPos).addClass(newPos);
+        $(this).attr('data-position', newPos);
+      } 
+    });
+})(jQuery);
 
 $(document).ready(function(){
   var owl = $('.services');

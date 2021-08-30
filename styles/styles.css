@@ -651,6 +651,140 @@ Header .side_Toggle_Box .active {
   background-color: transparent;
 }
 
+.testinomial_box {
+  position: relative;
+}
+
+.testinomial_box .testinomial_container.active .testinomial_content_box {
+  display: block;
+}
+
+.testinomial_box .testinomial_container.active .testinomial_content_img {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 40% !important;
+  right: 22% !important;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position {
+  top: 10%;
+  right: 35%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position1 {
+  top: 18%;
+  right: 20%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position2 {
+  top: 40%;
+  right: 12%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position3 {
+  top: 65%;
+  right: 12%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position4 {
+  top: 88%;
+  right: 20%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position5 {
+  top: 18%;
+  right: 30%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position6 {
+  top: 40%;
+  right: 38%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position7 {
+  top: 65%;
+  right: 38%;
+}
+
+.testinomial_box .testinomial_container.inactive .testinomial_content_img.position8 {
+  top: 88%;
+  right: 30%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_box {
+  width: 500px;
+  display: none;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position {
+  right: 30%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position1 {
+  top: 18%;
+  right: 20%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position2 {
+  top: 40%;
+  right: 12%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position3 {
+  top: 65%;
+  right: 12%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position4 {
+  top: 88%;
+  right: 20%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position5 {
+  top: 18%;
+  right: 30%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position6 {
+  top: 40%;
+  right: 38%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position7 {
+  top: 65%;
+  right: 38%;
+}
+
+.testinomial_box .testinomial_container .testinomial_content_img.position8 {
+  top: 88%;
+  right: 30%;
+}
+
 Footer img {
   padding-top: 15px;
   width: 100%;
