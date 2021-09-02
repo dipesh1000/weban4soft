@@ -1,0 +1,147 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+    Header {
+        .banner {
+            padding-top: 0;
+            .head_text {
+                margin-top: 10px;
+                max-width: 100%;
+                h1 {
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    span {
+                        color: $heading;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+/* small devices (Lablates, 600px and down) */
+@media only screen and (max-width: 768px) {
+    Header {
+        .top_Nav {
+            .top_Nav_Menus {
+                ul {
+                    display: none;
+                }
+            }
+        }
+        .banner {
+            padding-top: 0;
+            .head_text {
+                margin-top: 10px;
+                max-width: 100%;
+                h1 {
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    span {
+                        color: $heading;
+                    }
+                }
+            }
+        }
+    }
+    .we_serve_box {
+        background-image: url('/img/industry-bg.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        position: relative;
+        background-color: #f9f9f9;
+        .serve_inner_box {
+            width: 100%;
+            margin: 0 auto;
+            .nav-pills {
+                margin-bottom: 35px!important;
+                justify-content: space-between;
+                display: list-item;
+                .nav-item {
+                    max-width: 120px;
+                    text-align: center;
+                    .nav-link {
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                        &:last-child {
+                            padding-right: 0;
+                        }
+                        .icon_by_sector { 
+                            font-size: 25px;
+                            margin-bottom: 15px;
+                            padding: 10px;
+                            width: 65px;
+                            margin: 0 auto 15px auto;
+                            i {
+                                font-size: 32px;
+                                color: $content;
+                            }
+                        }
+                        span {  
+                            text-align: center;
+                        }
+                        &.active {
+                            background-color: transparent;
+                            .icon_by_sector {
+                                color: #fff;
+                                background-color: $primary;
+                                border-radius: 3px;
+                                i {
+                                    color: #fff;
+                                }
+                            }
+                            span {  
+                                color: $secondary;
+                            }
+                        }
+                        &:hover {
+                            background-color: transparent;
+                            .icon_by_sector {
+                                color: #fff;
+                                background-color: $primary;
+                                border-radius: 3px;
+                                i {
+                                    color: #fff;
+                                }
+                            }
+                            span {  
+                                color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+            .serve_conent_box {
+                color: $content;
+                font-size: 15px;
+                h5{
+                    font-weight: 600;
+                }
+                .service_list_box {
+                    margin-left: 15px;
+                    li {
+                        margin-bottom: 15px;
+                        &::marker {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+            .image_container {
+                text-align: center;
+               i {
+                font-size: 120px;
+                color: $primary;
+               }
+            }
+        }
+        .bg_img-industry{
+            background-image: url('/img/industry-bg.png');
+            background-position: right;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
