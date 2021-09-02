@@ -240,7 +240,7 @@ Header .side_Toggle_Box .active {
 }
 
 .home_section_layout .home_section_titles {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .home_section_layout .home_section_titles small {
@@ -300,9 +300,13 @@ Header .side_Toggle_Box .active {
   color: #FF4500;
 }
 
+.service_box .tabs-area .nav-tabs .nav-item .nav-link {
+  position: relative;
+  border: none;
+}
+
 .service_box .tabs-area .nav-tabs .nav-item .nav-link i {
-  border: 1px solid;
-  border-color: transparent;
+  border: none;
   border-radius: 50%;
   padding: .34em .45em;
 }
@@ -310,14 +314,39 @@ Header .side_Toggle_Box .active {
 .service_box .tabs-area .nav-tabs .nav-item .nav-link.active {
   border: none;
   color: #FF4500;
+  margin-top: -1px;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link.active i {
-  border-color: #FF4500;
+  border: 1px solid #FF4500;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link:hover {
   border: none;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item .nav-link:before {
+  content: '';
+  position: absolute;
+  vertical-align: middle;
+  height: 1px;
+  width: 45%;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  background: red;
+}
+
+.service_box .tabs-area .nav-tabs .nav-item .nav-link:after {
+  content: '';
+  position: absolute;
+  vertical-align: middle;
+  height: 1px;
+  width: 45%;
+  top: 50%;
+  right: 0;
+  display: inline-block;
+  background: red;
 }
 
 .service_box .tabs-area .nav-tabs .owl-nav button {
@@ -334,6 +363,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .nav-tabs .owl-nav button span {
+  background: #fff;
   font-size: 53px;
 }
 
@@ -352,7 +382,8 @@ Header .side_Toggle_Box .active {
   color: #111;
   font-weight: 600;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 45px;
+  margin-bottom: 15px;
 }
 
 .service_box .tabs-area .service_inner_box .service_title h2 span {
@@ -362,6 +393,12 @@ Header .side_Toggle_Box .active {
 .service_box .tabs-area .service_inner_box .service_title .text_bolder {
   font-weight: 600;
   color: #111;
+  margin-bottom: 15px;
+  line-height: 28px;
+}
+
+.service_box .tabs-area .service_inner_box .service_title span {
+  line-height: 28px;
 }
 
 .service_box .tabs-area .service_inner_box .img_box {
@@ -393,6 +430,10 @@ Header .side_Toggle_Box .active {
   color: #FF4500;
 }
 
+.service_box .tabs-area .service_inner_box .service_in_List li a {
+  line-height: 27px;
+}
+
 .we_serve_box {
   background-image: url("/img/industry-bg.png");
   background-position: left;
@@ -407,7 +448,7 @@ Header .side_Toggle_Box .active {
 }
 
 .we_serve_box .serve_inner_box .nav-pills {
-  margin-bottom: 35px !important;
+  margin-bottom: 50px !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -488,6 +529,10 @@ Header .side_Toggle_Box .active {
   font-weight: 600;
 }
 
+.we_serve_box .serve_inner_box .serve_conent_box p {
+  line-height: 29px;
+}
+
 .we_serve_box .serve_inner_box .serve_conent_box .service_list_box {
   margin-left: 15px;
 }
@@ -529,14 +574,15 @@ Header .side_Toggle_Box .active {
   color: rgba(0, 0, 0, 0.6);
   font-size: 15px;
   margin-bottom: 40px;
-  line-height: 25px;
+  line-height: 29px;
 }
 
 .work_box .works_main_contents p {
-  line-height: 25px;
+  line-height: 29px;
 }
 
 .work_box .work_showcase {
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -547,7 +593,7 @@ Header .side_Toggle_Box .active {
 }
 
 .work_box .work_showcase .work_showcase_content p {
-  line-height: 25px;
+  line-height: 29px;
 }
 
 .work_box .work_showcase .work_showcase_content .round_Btn {
@@ -658,6 +704,10 @@ Header .side_Toggle_Box .active {
 
 .testinomial_box .testinomial_container.active .testinomial_content_box {
   display: block;
+}
+
+.testinomial_box .testinomial_container.active .testinomial_content_box p {
+  line-height: 29px;
 }
 
 .testinomial_box .testinomial_container.active .testinomial_content_img {
@@ -876,8 +926,16 @@ Footer .copy_right {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
+  .round_Btn {
+    font-size: 14px;
+  }
+  .round_Btn::after {
+    font-size: 8px;
+  }
   Header .banner {
-    padding-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   Header .banner .head_text {
     margin-top: 10px;
@@ -894,6 +952,12 @@ Footer .copy_right {
 
 /* small devices (Lablates, 600px and down) */
 @media only screen and (max-width: 768px) {
+  .round_Btn {
+    font-size: 14px;
+  }
+  .round_Btn::after {
+    font-size: 8px;
+  }
   Header .top_Nav .top_Nav_Menus ul {
     display: none;
   }

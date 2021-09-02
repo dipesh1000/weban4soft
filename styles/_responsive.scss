@@ -1,8 +1,14 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
+    .round_Btn {
+        font-size: 14px;
+        &::after {
+            font-size: 8px;
+        }
+    }
     Header {
         .banner {
-            padding-top: 0;
+            align-items: center;
             .head_text {
                 margin-top: 10px;
                 max-width: 100%;
@@ -20,6 +26,12 @@
 
 /* small devices (Lablates, 600px and down) */
 @media only screen and (max-width: 768px) {
+    .round_Btn {
+        font-size: 14px;
+        &::after {
+            font-size: 8px;
+        }
+    }
     Header {
         .top_Nav {
             .top_Nav_Menus {

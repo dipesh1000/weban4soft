@@ -214,7 +214,7 @@ Header {
 .home_section_layout {
     padding: 70px 0;
     .home_section_titles {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         small {
             font-style: normal;
             font-weight: 300;
@@ -265,21 +265,45 @@ Header {
                     }
                 }
                 .nav-link {
+                    position: relative;
+                    border: none;
                     i {
-                        border: 1px solid;
-                        border-color: transparent;
+                        border: none;
                         border-radius: 50%;
                         padding: .34em .45em;
                     }
                     &.active {
                         border: none;
                         color: $primary;
+                        margin-top: -1px;
                         i {
-                            border-color: $primary;
+                            border: 1px solid $primary;
                         }
                     }
                     &:hover {
                         border: none;
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        vertical-align: middle;
+                        height: 1px;
+                        width: 45%;
+                        top: 50%;
+                        left: 0;
+                        display: inline-block;
+                        background: red;
+                    }
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        vertical-align: middle;
+                        height: 1px;
+                        width: 45%;
+                        top: 50%;
+                        right: 0;
+                        display: inline-block;
+                        background: red;
                     }
                 }
             }
@@ -294,6 +318,7 @@ Header {
                         right: 0;
                     }
                     span {
+                        background: #fff;
                         font-size: 53px;
                     }
                     &:focus {
@@ -313,7 +338,8 @@ Header {
                     color: $heading;
                     font-weight: 600;
                     font-size: 30px;
-                    line-height: 40px;
+                    line-height: 45px;
+                    margin-bottom: 15px;
                     span {
                     color: $primary;
                     }
@@ -321,6 +347,11 @@ Header {
                 .text_bolder {
                     font-weight: 600;
                     color: $heading;
+                    margin-bottom: 15px;
+                    line-height: 28px;
+                }
+                span {
+                    line-height: 28px;
                 }
             }
             .img_box {
@@ -344,6 +375,9 @@ Header {
                     &::marker { 
                         color: $primary;
                     }
+                    a {
+                        line-height: 27px;
+                    }
                 }
             }
         }
@@ -359,7 +393,7 @@ Header {
         width: 960px;
         margin: 0 auto;
         .nav-pills {
-            margin-bottom: 35px!important;
+            margin-bottom: 50px!important;
             justify-content: space-between;
             .nav-item {
                 max-width: 120px;
@@ -422,6 +456,9 @@ Header {
             h5{
                 font-weight: 600;
             }
+            p {
+                line-height: 29px;
+            }
             .service_list_box {
                 margin-left: 15px;
                 li {
@@ -457,19 +494,20 @@ Header {
         color: $content;
         font-size: 15px;
         margin-bottom: 40px;
-        line-height: 25px;
+        line-height: 29px;
         p {
-            line-height: 25px;
+            line-height: 29px;
         }
     }
     .work_showcase {
+        margin-top: 40px;
         margin-bottom: 40px;
         .work_showcase_content {
             text-align: right;
             font-size: 15px;
             color: $content;
             p {
-                line-height: 25px;
+                line-height: 29px;
             }
             .round_Btn {
                 background-color: transparent;
@@ -563,6 +601,9 @@ Header {
         &.active {
             .testinomial_content_box {
                 display: block;
+                p {
+                    line-height: 29px;
+                }
             }
             .testinomial_content_img {
                 position: absolute;
