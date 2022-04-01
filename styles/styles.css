@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
 *,
 body {
@@ -1148,7 +1149,7 @@ section .banner .blog-banner-right span {
 
 .blog-posts p a {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 3vh;
   line-height: 30px;
   color: #000000;
 }
@@ -1211,28 +1212,30 @@ section .section-card p {
   color: rgba(0, 0, 0, 0.5);
 }
 
+section .section-card span::after {
+  content: " •  \f192   \f111  \f061";
+  font-family: FontAwesome;
+  margin-left: 15px;
+  color: #ff6600;
+}
+
 .career-culture {
   background: rgba(196, 196, 196, 0.3);
 }
 
 .career-culture h2 {
   font-weight: 700;
-  font-size: 65px;
-  line-height: 75px;
+  font-size: 7vh;
   color: #ff6600;
 }
 
-.career-culture h4 {
+.career-culture h3 {
   font-weight: 700;
-  font-size: 35px;
-  line-height: 60px;
   color: #000000;
 }
 
 .career-culture p {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1242,9 +1245,9 @@ section .section-card p {
 
 .career-benefits h2 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 7vh;
   line-height: 70px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .career-benefits img {
@@ -1253,14 +1256,14 @@ section .section-card p {
 
 .career-benefits h6 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 3vh;
   line-height: 60px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .career-end-title h3 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 8vh;
   line-height: 70px;
   color: #ff6600;
 }
@@ -1306,6 +1309,8 @@ header .banner-details {
 
 .career-services img {
   margin: 130px 0 30px 0;
+  max-width: 100px;
+  height: auto;
 }
 
 .career-services a {
@@ -1320,7 +1325,6 @@ header .banner-details {
   background: #fff;
   color: #ff6600;
   padding: 1px 6px;
-  margin-left: 10px;
   border-radius: 50%;
 }
 
@@ -1328,16 +1332,15 @@ header .banner-details {
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.4);
   color: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 .career-services a.inactive::after {
   content: "\f061";
   font-family: FontAwesome;
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.4);
   color: rgba(0, 0, 0, 0.5);
   padding: 1px 6px;
-  margin-left: 10px;
   border-radius: 50%;
 }
 

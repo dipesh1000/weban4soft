@@ -1209,7 +1209,7 @@ section {
   p {
     a {
       font-weight: 800;
-      font-size: 20px;
+      font-size: 3vh;
       line-height: 30px;
       color: #000000;
     }
@@ -1267,26 +1267,29 @@ section {
       line-height: 25px;
       color: rgba(0, 0, 0, 0.5);
     }
+    span {
+      &::after {
+        content: " •  \f192   \f111  \f061";
+        font-family: FontAwesome;
+        margin-left: 15px;
+        color: #ff6600;
+      }
+    }
   }
 }
 .career-culture {
   background: rgba(196, 196, 196, 0.3);
   h2 {
     font-weight: 700;
-    font-size: 65px;
-    line-height: 75px;
+    font-size: 7vh;
     color: #ff6600;
   }
-  h4 {
+  h3 {
     font-weight: 700;
-    font-size: 35px;
-    line-height: 60px;
     color: #000000;
   }
   p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
     color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -1294,24 +1297,24 @@ section {
   background: #2957a5;
   h2 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 7vh;
     line-height: 70px;
-    color: #ffffff;
+    color: #fff;
   }
   img {
     background: #fff;
   }
   h6 {
     font-weight: 700;
-    font-size: 25px;
+    font-size: 3vh;
     line-height: 60px;
-    color: #ffffff;
+    color: #fff;
   }
 }
 .career-end-title {
   h3 {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 8vh;
     line-height: 70px;
     color: #ff6600;
   }
@@ -1353,6 +1356,9 @@ header {
   }
   img {
     margin: 130px 0 30px 0;
+    max-width: 100px;
+    height: auto;
+
   }
   a {
     background: #ff6600;
@@ -1364,7 +1370,7 @@ header {
       background: #fff;
       color: #ff6600;
       padding: 1px 6px;
-      margin-left: 10px;
+      // margin-left: 10px;
       border-radius: 50%;
     }
   }
@@ -1372,14 +1378,15 @@ header {
     background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.4);
     color: rgba(0, 0, 0, 0.5);
+    width: 100%;
     &::after {
       content: "\f061";
       font-family: FontAwesome;
       background: #fff;
-      border: 1px solid rgba(0, 0, 0, 0.4);
+      // border: 1px solid rgba(0, 0, 0, 0.4);
       color: rgba(0, 0, 0, 0.5);
       padding: 1px 6px;
-      margin-left: 10px;
+      // margin-left: 10px;
       border-radius: 50%;
     }
   }
