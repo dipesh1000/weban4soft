@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
-*, body {
+*,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #111;
 }
 
@@ -15,14 +21,14 @@ a {
 }
 
 a:hover {
-  color: #FF4500;
+  color: #ff4500;
   text-decoration: underline;
 }
 
 .round_Btn {
-  padding: .4em 2.5em .4em 1em;
+  padding: 0.4em 2.5em 0.4em 1em;
   border-radius: 20px;
-  background-color: #FF4500;
+  background-color: #ff4500;
   color: #fff !important;
   display: inline-block;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
@@ -40,16 +46,16 @@ a:hover {
   font-size: 10px;
   font-weight: 600;
   background-color: #fff;
-  color: #FF4500;
-  padding: 7px 10px;
+  color: #ff4500;
+  padding: 3px 7px;
   position: absolute;
   border-radius: 50%;
-  right: 3px;
-  top: 3px;
+  right: 8px;
+  top: 8px;
 }
 
 .trans_btn {
-  color: #FF4500;
+  color: #ff4500;
   text-transform: uppercase;
 }
 
@@ -111,7 +117,7 @@ Header .top_Nav .top_Nav_Menus button {
   margin-left: "10px";
   border: none;
   background-color: transparent;
-  color: #FF4500;
+  color: #ff4500;
   width: 20px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -134,13 +140,13 @@ Header .banner {
 
 Header .banner .head_text {
   margin-top: 100px;
-  max-width: 200px;
+  max-width: 500px;
 }
 
 Header .banner .head_text h1 {
   font-size: 5vw;
   font-weight: 900;
-  color: #FF4500;
+  color: #ff4500;
   margin-bottom: 48px;
 }
 
@@ -164,7 +170,7 @@ Header .side_Toggle_Box .toggle_Box {
   width: 100%;
   height: 100vh;
   margin-right: -100%;
-  background-color: #00225F;
+  background-color: #00225f;
   -webkit-transition: margin-right 2s;
   transition: margin-right 2s;
 }
@@ -203,7 +209,7 @@ Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a {
 
 Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a:hover {
   text-decoration: none;
-  color: #FF4500;
+  color: #ff4500;
 }
 
 Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1.nav_Num {
@@ -268,7 +274,7 @@ Header .side_Toggle_Box .active {
 }
 
 .home_section_layout .home_section_titles h1 span {
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .our_concepts {
@@ -297,7 +303,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .service_Item span {
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link {
@@ -308,17 +314,17 @@ Header .side_Toggle_Box .active {
 .service_box .tabs-area .nav-tabs .nav-item .nav-link i {
   border: none;
   border-radius: 50%;
-  padding: .34em .45em;
+  padding: 0.34em 0.45em;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link.active {
   border: none;
-  color: #FF4500;
+  color: #ff4500;
   margin-top: -1px;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link.active i {
-  border: 1px solid #FF4500;
+  border: 1px solid #ff4500;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link:hover {
@@ -326,7 +332,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link:before {
-  content: '';
+  content: "";
   position: absolute;
   vertical-align: middle;
   height: 1px;
@@ -338,7 +344,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link:after {
-  content: '';
+  content: "";
   position: absolute;
   vertical-align: middle;
   height: 1px;
@@ -387,7 +393,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .service_inner_box .service_title h2 span {
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .service_box .tabs-area .service_inner_box .service_title .text_bolder {
@@ -427,7 +433,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .service_inner_box .service_in_List li::marker {
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .service_box .tabs-area .service_inner_box .service_in_List li a {
@@ -490,7 +496,7 @@ Header .side_Toggle_Box .active {
 
 .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector {
   color: #fff;
-  background-color: #FF4500;
+  background-color: #ff4500;
   border-radius: 3px;
 }
 
@@ -499,7 +505,7 @@ Header .side_Toggle_Box .active {
 }
 
 .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active span {
-  color: #00225F;
+  color: #00225f;
 }
 
 .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover {
@@ -508,7 +514,7 @@ Header .side_Toggle_Box .active {
 
 .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector {
   color: #fff;
-  background-color: #FF4500;
+  background-color: #ff4500;
   border-radius: 3px;
 }
 
@@ -517,7 +523,7 @@ Header .side_Toggle_Box .active {
 }
 
 .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover span {
-  color: #00225F;
+  color: #00225f;
 }
 
 .we_serve_box .serve_inner_box .serve_conent_box {
@@ -542,7 +548,7 @@ Header .side_Toggle_Box .active {
 }
 
 .we_serve_box .serve_inner_box .serve_conent_box .service_list_box li::marker {
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .we_serve_box .serve_inner_box .image_container {
@@ -551,7 +557,7 @@ Header .side_Toggle_Box .active {
 
 .we_serve_box .serve_inner_box .image_container i {
   font-size: 120px;
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .we_serve_box .bg_img-industry {
@@ -564,7 +570,7 @@ Header .side_Toggle_Box .active {
 }
 
 .work_box {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .work_box .works_main_contents {
@@ -604,7 +610,7 @@ Header .side_Toggle_Box .active {
 }
 
 .work_box .work_showcase .work_showcase_content .round_Btn:hover {
-  background-color: #FF4500;
+  background-color: #ff4500;
   color: #fff !important;
 }
 
@@ -617,7 +623,7 @@ Header .side_Toggle_Box .active {
 }
 
 .blog_box {
-  background-color: #00225F;
+  background-color: #00225f;
 }
 
 .blog_box .home_section_titles small {
@@ -680,7 +686,7 @@ Header .side_Toggle_Box .active {
 }
 
 .blog_box .blog_item_slider .blog_items .blog_item .blog_content_box .blog_contents .blog__content h4 {
-  color: #FF4500;
+  color: #ff4500;
   font-size: 20px;
   line-height: 25px;
 }
@@ -784,7 +790,7 @@ Header .side_Toggle_Box .active {
 }
 
 .testinomial_box .testinomial_container .testinomial_content_box a {
-  color: #FF4500;
+  color: #ff4500;
 }
 
 .testinomial_box .testinomial_container .testinomial_content_img {
@@ -878,7 +884,13 @@ Header .side_Toggle_Box .active {
 
 Footer img {
   padding-top: 15px;
-  width: 100%;
+}
+
+Footer .logo_an4soft {
+  position: absolute;
+  z-index: -1;
+  width: 70%;
+  left: 12%;
 }
 
 Footer .bottom_quick_links .menu_group h6 {
@@ -924,6 +936,646 @@ Footer .copy_right {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.work_with_us_section p {
+  color: rgba(50, 2, 2, 0.16);
+}
+
+.work_with_us_section h3 {
+  font-weight: 900;
+}
+
+.work_with_us_section h3 span {
+  color: #ff6600;
+}
+
+.work_with_us_section .row p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.work_with_us_section button {
+  background: #ff6600;
+  color: #fff;
+}
+
+/* -----aboutus page starts----------------------------------------------- */
+Header .banner .aboutus_head_text {
+  margin-top: 100px;
+}
+
+Header .banner .aboutus_head_text h1 {
+  color: #111;
+  font-size: 3vw;
+  font-weight: 900;
+}
+
+Header .banner .aboutus_head_text h1 span {
+  color: #ff4500;
+  margin-bottom: 48px;
+}
+
+Header .banner .about-banner-details {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* -----aboutus page ends ----------------------------------------------- */
+/* -----contact page starts ----------------------------------------------- */
+Header {
+  height: auto;
+}
+
+section .banner span {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+section .banner p span {
+  color: #ff4500;
+  font-weight: 700;
+}
+
+section .banner h5 {
+  color: #ff4500;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+section .banner ul li {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+section .banner h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+section .banner h2 span {
+  font-size: inherit;
+  color: #ff4500;
+  font-weight: inherit;
+}
+
+section .banner a {
+  color: #fff !important;
+  background-color: #ff6600;
+  text-decoration: none;
+  position: relative;
+  font-size: 25px;
+  width: 200px;
+}
+
+section .banner a::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #ff6600;
+  margin: 5px 2px 2px 2px;
+  padding: 5px 10px;
+  position: absolute;
+  border-radius: 50%;
+  right: 15px;
+  top: 3px;
+}
+
+section .banner input,
+section .banner select,
+section .banner textarea {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #000;
+}
+
+section .banner input:focus,
+section .banner select:focus,
+section .banner textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #000;
+}
+
+/* -----contact page ends ----------------------------------------------- */
+/* -----blog page starts ----------------------------------------------- */
+section .banner .banner-left h1 {
+  font-weight: 800;
+  font-size: 60px;
+}
+
+section .banner .banner-left span {
+  color: #ff6600;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+section .banner .banner-left span::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: 15px;
+  color: #ff6600;
+  background: #fff;
+  position: relative;
+  top: -5px;
+  font-size: 10px;
+  text-align: center;
+}
+
+section .banner .blog-banner-right p {
+  letter-spacing: 0.25em;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ff6600;
+}
+
+section .banner .blog-banner-right h3 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+section .banner .blog-banner-right span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.blog-tab {
+  background: #2957a5;
+  color: #fff;
+}
+
+.blog-tab span a {
+  color: #fff;
+}
+
+.blog-tab .subscribe a {
+  color: #fff !important;
+  background-color: #ff6600;
+  text-decoration: none;
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.blog-tab .subscribe a::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #fff;
+  color: #ff6600;
+  margin: 0px 2px 2px 10px;
+  padding: 6px 8px;
+  border-radius: 50%;
+  position: relative;
+  top: -2px;
+}
+
+.blog-posts h5 {
+  color: #ff6600;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.25em;
+}
+
+.blog-posts p a {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.blog-posts a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* -----blog page ends ----------------------------------------------- */
+/* -----career1 page starts ----------------------------------------------- */
+section .banner h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  max-width: 550px;
+}
+
+section .banner h2 span {
+  color: #ff6600;
+}
+
+section .banner p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+section .banner p span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ff6600;
+}
+
+section .section-card {
+  background: rgba(196, 196, 196, 0.3);
+  -webkit-box-shadow: 0px 5px 15px 2px rgba(206, 206, 206, 0.25);
+          box-shadow: 0px 5px 15px 2px rgba(206, 206, 206, 0.25);
+}
+
+section .section-card h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+section .section-card h6 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+section .section-card p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.career-culture {
+  background: rgba(196, 196, 196, 0.3);
+}
+
+.career-culture h2 {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 75px;
+  color: #ff6600;
+}
+
+.career-culture h4 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.career-culture p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.career-benefits {
+  background: #2957a5;
+}
+
+.career-benefits h2 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.career-benefits img {
+  background: #fff;
+}
+
+.career-benefits h6 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.career-end-title h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #ff6600;
+}
+
+.career-end-title p {
+  font-weight: 600;
+}
+
+/* -----career1 page ends ----------------------------------------------- */
+/* -----career2 page starts ----------------------------------------------- */
+header h1 {
+  font-weight: 700;
+  font-size: 6vw;
+  line-height: 7vw;
+}
+
+header p {
+  font-weight: 600;
+}
+
+header .banner-details {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.career-services h3 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  line-height: 60px;
+  width: 320px;
+}
+
+.career-services h3 span {
+  font-weight: 700;
+}
+
+.career-services h4 {
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.career-services img {
+  margin: 130px 0 30px 0;
+}
+
+.career-services a {
+  background: #ff6600;
+  color: #fff;
+  width: 100%;
+}
+
+.career-services a::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  background: #fff;
+  color: #ff6600;
+  padding: 1px 6px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.career-services a.inactive {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.career-services a.inactive::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.5);
+  padding: 1px 6px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.carrer2-deliver {
+  background: #ff6600;
+}
+
+.carrer2-deliver h3 {
+  font-weight: 300;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.carrer2-deliver h2 {
+  font-size: 5vw;
+  font-weight: 800;
+  line-height: 70px;
+}
+
+.carrer2-deliver h1 {
+  font-weight: 800;
+  line-height: 80px;
+  color: #ffffff;
+}
+
+.carrer2-deliver p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.carrer2-deliver .vl {
+  border-left: 1px solid #fff;
+  height: 100vh;
+}
+
+.career2-insights h4 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 40px;
+  color: #320202;
+}
+
+.career2-insights p {
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.career2-insights input {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #000;
+}
+
+.career2-insights input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #000;
+}
+
+.career2-insights a {
+  color: #ffffff;
+  background: #ff6600;
+}
+
+.career2-insights a::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: 15px;
+  color: #ff6600;
+  background: #fff;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.career2-workwithus {
+  background: #00173e;
+}
+
+.career2-workwithus h4 {
+  color: #ffffff;
+  line-height: 40px;
+}
+
+.career2-workwithus p {
+  color: #ffffff;
+}
+
+.career2-workwithus a {
+  color: #ffffff;
+  background: #ff6600;
+}
+
+.career2-workwithus a::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: 15px;
+  color: #ff6600;
+  background: #fff;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+/* -----career2 page ends ----------------------------------------------- */
+/* -----career3 page starts ----------------------------------------------- */
+.career3-banner p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.career3-banner a {
+  background: #ff6600;
+  color: #fff;
+  font-weight: 500;
+}
+
+.career3-banner a::after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.career3-technologies p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.career3-technologies h3 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100px;
+}
+
+.career3-mid-banner {
+  background: #2957a5;
+}
+
+.career3-mid-banner p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.career3-mid-banner h3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: #fff;
+}
+
+.career3-mid-banner a {
+  color: #fff;
+  background: #ff6600;
+}
+
+.career3-mid-banner a::after {
+  margin-left: 20px;
+  content: "\f061";
+  font-family: FontAwesome;
+}
+
+.career3-industries-we-serve h1 {
+  font-weight: 600;
+  line-height: 50px;
+}
+
+.career3-industries-we-serve p {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.career3-industries-we-serve h3 {
+  position: absolute;
+  font-weight: 700;
+  top: 75%;
+  color: #fff;
+  z-index: 2;
+}
+
+.career3-industries-we-serve .card {
+  position: relative;
+}
+
+.career3-industries-we-serve .card::after {
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.tab-content card img {
+  height: 100px;
+}
+
+/* -----career3 page ends ----------------------------------------------- */
+/* -----portfolio page starts ----------------------------------------------- */
+.portfolio-banner p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-item h5 {
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.portfolio-item p {
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 0;
+}
+
+.call-tab {
+  background-color: #ff6600;
+}
+
+.call-tab h3 {
+  color: #fff;
+  font-weight: 600;
+}
+
+.call-tab h3 span {
+  color: #000;
+}
+
+.call-tab a {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* -----portfolio page ends ----------------------------------------------- */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
   .round_Btn {
@@ -1022,28 +1674,28 @@ Footer .copy_right {
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector {
     color: #fff;
-    background-color: #FF4500;
+    background-color: #ff4500;
     border-radius: 3px;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector i {
     color: #fff;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active span {
-    color: #00225F;
+    color: #00225f;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover {
     background-color: transparent;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector {
     color: #fff;
-    background-color: #FF4500;
+    background-color: #ff4500;
     border-radius: 3px;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector i {
     color: #fff;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover span {
-    color: #00225F;
+    color: #00225f;
   }
   .we_serve_box .serve_inner_box .serve_conent_box {
     color: rgba(0, 0, 0, 0.6);
@@ -1059,14 +1711,14 @@ Footer .copy_right {
     margin-bottom: 15px;
   }
   .we_serve_box .serve_inner_box .serve_conent_box .service_list_box li::marker {
-    color: #FF4500;
+    color: #ff4500;
   }
   .we_serve_box .serve_inner_box .image_container {
     text-align: center;
   }
   .we_serve_box .serve_inner_box .image_container i {
     font-size: 120px;
-    color: #FF4500;
+    color: #ff4500;
   }
   .we_serve_box .bg_img-industry {
     background-image: url("/img/industry-bg.png");
