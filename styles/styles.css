@@ -409,7 +409,6 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .service_inner_box .img_box {
-  width: 100%;
   padding: 20px;
 }
 
@@ -856,6 +855,7 @@ Header .side_Toggle_Box .active {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 20%;
 }
 
 .client_box .client_items .company_logo a {
