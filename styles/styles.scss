@@ -405,7 +405,7 @@ Header {
       .service_title {
         h2 {
           max-width: 200px;
-          color: $heading;  
+          color: $heading;
           font-weight: 600;
           font-size: 30px;
           line-height: 45px;
@@ -889,7 +889,7 @@ Header {
     // width: 100%;
     .company_logo {
       align-self: center;
-      width:20%;
+      width: 20%;
 
       a {
         width: 100%;
@@ -1211,7 +1211,7 @@ section {
   }
   p {
     a {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 3vh;
       line-height: 30px;
       color: #000000;
@@ -1618,5 +1618,6 @@ header {
 }
 
 /* -----portfolio page ends ----------------------------------------------- */
+
 
 @import "./responsive";
