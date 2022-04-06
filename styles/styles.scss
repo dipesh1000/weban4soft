@@ -889,7 +889,7 @@ Header {
     // width: 100%;
     .company_logo {
       align-self: center;
-      width: 20%;
+      max-width: 200px;
 
       a {
         width: 100%;
@@ -946,7 +946,7 @@ Footer {
         color: $content;
 
         li {
-          text-align: left;
+          // text-align: left;
           color: $content;
           margin-bottom: 10px;
 
@@ -957,15 +957,15 @@ Footer {
       }
 
       &.las_menu {
-        padding-left: 100px;
+        // padding-left: 100px;
       }
 
       &.third_menu {
-        padding-left: 50px;
+        // padding-left: 50px;
       }
 
       &.second_menu {
-        padding-left: 20px;
+        // padding-left: 20px;
       }
     }
   }
@@ -1009,7 +1009,7 @@ Header {
       // max-width: 300px;
       h1 {
         color: $heading;
-        font-size: 3vw;
+        font-size: 4vw;
         font-weight: 900;
 
         span {
@@ -1021,6 +1021,17 @@ Header {
 
     .about-banner-details {
       color: $content;
+      p {
+        line-height: 25px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.home_section_layout {
+  .home_section_details {
+    p {
+      line-height: 25px;
     }
   }
 }
@@ -1327,21 +1338,27 @@ section {
 }
 /* -----career1 page ends ----------------------------------------------- */
 
-/* -----career2 page starts ----------------------------------------------- */
+/* -----services page starts ----------------------------------------------- */
 header {
   h1 {
     font-weight: 700;
     font-size: 6vw;
     line-height: 7vw;
   }
-  p {
+  h5{
+    font-size: 22px;
     font-weight: 600;
+    line-height: 35px;
   }
+
   .banner-details {
-    font-weight: 500;
+    // font-weight: 500;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
     color: rgba(0, 0, 0, 0.5);
+    p {
+      line-height: 28px;
+    }
   }
 }
 .career-services {
@@ -1479,7 +1496,7 @@ header {
   }
 }
 
-/* -----career2 page ends ----------------------------------------------- */
+/* -----services page ends ----------------------------------------------- */
 
 /* -----career3 page starts ----------------------------------------------- */
 
@@ -1618,6 +1635,5 @@ header {
 }
 
 /* -----portfolio page ends ----------------------------------------------- */
-
 
 @import "./responsive";

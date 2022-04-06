@@ -855,7 +855,7 @@ Header .side_Toggle_Box .active {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 20%;
+  max-width: 200px;
 }
 
 .client_box .client_items .company_logo a {
@@ -908,25 +908,12 @@ Footer .bottom_quick_links .menu_group .menu_items {
 }
 
 Footer .bottom_quick_links .menu_group .menu_items li {
-  text-align: left;
   color: rgba(0, 0, 0, 0.6);
   margin-bottom: 10px;
 }
 
 Footer .bottom_quick_links .menu_group .menu_items li a {
   color: rgba(0, 0, 0, 0.6);
-}
-
-Footer .bottom_quick_links .menu_group.las_menu {
-  padding-left: 100px;
-}
-
-Footer .bottom_quick_links .menu_group.third_menu {
-  padding-left: 50px;
-}
-
-Footer .bottom_quick_links .menu_group.second_menu {
-  padding-left: 20px;
 }
 
 Footer .copy_right {
@@ -965,7 +952,7 @@ Header .banner .aboutus_head_text {
 
 Header .banner .aboutus_head_text h1 {
   color: #111;
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 900;
 }
 
@@ -976,6 +963,15 @@ Header .banner .aboutus_head_text h1 span {
 
 Header .banner .about-banner-details {
   color: rgba(0, 0, 0, 0.6);
+}
+
+Header .banner .about-banner-details p {
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.home_section_layout .home_section_details p {
+  line-height: 25px;
 }
 
 /* -----aboutus page ends ----------------------------------------------- */
@@ -1273,22 +1269,27 @@ section .section-card span::after {
 }
 
 /* -----career1 page ends ----------------------------------------------- */
-/* -----career2 page starts ----------------------------------------------- */
+/* -----services page starts ----------------------------------------------- */
 header h1 {
   font-weight: 700;
   font-size: 6vw;
   line-height: 7vw;
 }
 
-header p {
+header h5 {
+  font-size: 22px;
   font-weight: 600;
+  line-height: 35px;
 }
 
 header .banner-details {
-  font-weight: 500;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 30px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+header .banner-details p {
+  line-height: 28px;
 }
 
 .career-services h3 {
@@ -1444,7 +1445,7 @@ header .banner-details {
   border-radius: 50%;
 }
 
-/* -----career2 page ends ----------------------------------------------- */
+/* -----services page ends ----------------------------------------------- */
 /* -----career3 page starts ----------------------------------------------- */
 .career3-banner p {
   color: rgba(0, 0, 0, 0.5);
