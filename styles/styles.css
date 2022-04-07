@@ -230,6 +230,7 @@ Header .side_Toggle_Box .toggle_Box .inner_Box .bg_Image_Container {
   position: absolute;
   top: 40%;
   left: 0;
+  z-index: 1;
 }
 
 Header .side_Toggle_Box .active {
@@ -855,7 +856,7 @@ Header .side_Toggle_Box .active {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  max-width: 200px;
+  max-width: 150px;
 }
 
 .client_box .client_items .company_logo a {
@@ -1059,8 +1060,8 @@ section .banner textarea:focus {
 /* -----contact page ends ----------------------------------------------- */
 /* -----blog page starts ----------------------------------------------- */
 section .banner .banner-left h1 {
-  font-weight: 800;
-  font-size: 60px;
+  font-weight: 700;
+  font-size: 50px;
 }
 
 section .banner .banner-left span {
@@ -1092,8 +1093,8 @@ section .banner .blog-banner-right p {
 
 section .banner .blog-banner-right h3 {
   font-weight: 600;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 22px;
+  line-height: 32px;
 }
 
 section .banner .blog-banner-right span {
@@ -1284,7 +1285,7 @@ header h5 {
 
 header .banner-details {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 32px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1358,7 +1359,7 @@ header .banner-details p {
 .carrer2-deliver h2 {
   font-size: 5vw;
   font-weight: 800;
-  line-height: 70px;
+  line-height: 80px;
 }
 
 .carrer2-deliver h1 {
@@ -1370,7 +1371,7 @@ header .banner-details p {
 .carrer2-deliver p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 30px;
 }
 
 .carrer2-deliver .vl {
@@ -1428,6 +1429,7 @@ header .banner-details p {
 
 .career2-workwithus p {
   color: #ffffff;
+  line-height: 30px;
 }
 
 .career2-workwithus a {
@@ -1449,6 +1451,7 @@ header .banner-details p {
 /* -----career3 page starts ----------------------------------------------- */
 .career3-banner p {
   color: rgba(0, 0, 0, 0.5);
+  line-height: 30px;
 }
 
 .career3-banner a {
@@ -1465,9 +1468,8 @@ header .banner-details p {
 }
 
 .career3-technologies p {
-  font-weight: 700;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 30px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1561,6 +1563,14 @@ header .banner-details p {
   line-height: 0;
 }
 
+.want_to_see_tab h3 {
+  font-weight: 700;
+}
+
+.want_to_see_tab p {
+  line-height: 30px;
+}
+
 .call-tab {
   background-color: #ff6600;
 }
@@ -1572,6 +1582,10 @@ header .banner-details p {
 
 .call-tab h3 span {
   color: #000;
+}
+
+.call-tab p {
+  line-height: 30px;
 }
 
 .call-tab a {

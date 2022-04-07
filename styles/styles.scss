@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  // overflow-x: hidden;
 }
 
 h1,
@@ -235,6 +236,7 @@ Header {
           position: absolute;
           top: 40%;
           left: 0;
+          z-index: 1;
         }
       }
     }
@@ -889,7 +891,7 @@ Header {
     // width: 100%;
     .company_logo {
       align-self: center;
-      max-width: 200px;
+      max-width: 150px;
 
       a {
         width: 100%;
@@ -1134,8 +1136,8 @@ section {
   .banner {
     .banner-left {
       h1 {
-        font-weight: 800;
-        font-size: 60px;
+        font-weight: 700;
+        font-size: 50px;
       }
       span {
         color: #ff6600;
@@ -1168,8 +1170,8 @@ section {
       }
       h3 {
         font-weight: 600;
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 22px;
+        line-height: 32px;
       }
       span {
         font-weight: 500;
@@ -1354,7 +1356,7 @@ header {
   .banner-details {
     // font-weight: 500;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 32px;
     color: rgba(0, 0, 0, 0.5);
     p {
       line-height: 28px;
@@ -1420,7 +1422,7 @@ header {
   h2 {
     font-size: 5vw;
     font-weight: 800;
-    line-height: 70px;
+    line-height: 80px;
   }
   h1 {
     font-weight: 800;
@@ -1430,7 +1432,7 @@ header {
   p {
     font-weight: 400;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 30px;
   }
   .vl {
     border-left: 1px solid #fff;
@@ -1480,6 +1482,7 @@ header {
   }
   p {
     color: #ffffff;
+    line-height: 30px;
   }
   a {
     color: #ffffff;
@@ -1503,6 +1506,7 @@ header {
 .career3-banner {
   p {
     color: rgba(0, 0, 0, 0.5);
+    line-height: 30px;
   }
   a {
     background: #ff6600;
@@ -1521,9 +1525,9 @@ header {
 }
 .career3-technologies {
   p {
-    font-weight: 700;
+    // font-weight: 500;  
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
     color: rgba(0, 0, 0, 0.5);
   }
   h3 {
@@ -1619,6 +1623,16 @@ header {
     line-height: 0;
   }
 }
+.want_to_see_tab{
+  h3{
+    font-weight: 700;
+  }
+  p{
+    line-height: 30px;
+  }
+}
+
+
 .call-tab {
   background-color: #ff6600;
   h3 {
@@ -1628,6 +1642,10 @@ header {
       color: #000;
     }
   }
+  p{
+    line-height: 30px;
+  }
+ 
   a {
     color: #fff;
     border: 1px solid #fff;
