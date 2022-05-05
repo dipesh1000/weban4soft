@@ -1,21 +1,25 @@
 //@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-$primary: #ff4500;
+$primary: #FF5B00;
 $link: #333;
 $heading: #111;
 $secondary: #00225f;
 $subTitle: rgba(0, 0, 0, 0.4);
 $content: rgba(0, 0, 0, 0.6);
 
+
+/** -------------- Global Styles --------------- **/
+
 *,
 body {
   margin: 0;
   padding: 0;
   // font-family: "Poppins", sans-serif;
-  font-family: 'Inter', sans-serif;
+  // font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
   // overflow-x: hidden;
 }
 
@@ -88,7 +92,7 @@ Header {
     align-items: center;
 
     .logo_Container {
-      width: 200px;
+      width: 180px;
 
       img {
         width: 100%;
@@ -98,15 +102,32 @@ Header {
     .top_Nav_Menus {
       display: flex;
       align-items: center;
-
       ul {
+        align-items: center;
         margin-bottom: 0;
         display: flex;
         list-style: none;
-
         li {
           margin-left: 15px;
           padding: 1em;
+          .menuitem_main {
+            text-decoration: none;
+            position: relative;
+            &::after {
+              transition: all 0.3s;
+              position: absolute;
+              background: transparent;
+              content: '';
+              height: 2px;
+              display: block;
+              top: 35px;
+              width: 0;
+            }
+            &:hover::after {
+              width: 100%;
+              background: $primary;
+            }
+          }
         }
       }
 
@@ -137,8 +158,9 @@ Header {
       max-width: 500px;
 
       h1 {
-        font-size: 5vw;
-        font-weight: 900;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 70px;
         color: $primary;
         margin-bottom: 48px;
 
@@ -280,17 +302,23 @@ Header {
         margin-top: 20px;
       }
 
-      &.subtitles {
-        line-height: 20px;
-      }
+    }
+    & .subtitles {
+      font-family: 'Raleway';
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 29px;
+      color: $content;
     }
 
     h1 {
       max-width: 341px;
       color: $heading;
+      font-family: 'Raleway';
+      font-style: normal;
       font-weight: 700;
-      font-size: 36px;
-      line-height: 50px;
+      font-size: 50px;
+      line-height: 60px;
 
       span {
         color: $primary;
@@ -298,6 +326,8 @@ Header {
     }
   }
 }
+
+/** -------------- Ends Global Styles --------------- **/
 
 .our_concepts {
   background-image: url("/img/mud-pot.png");
@@ -335,14 +365,13 @@ Header {
           i {
             border: none;
             border-radius: 50%;
-            padding: 0.34em 0.45em;
+            padding: 0.7em 0.81em;
           }
 
           &.active {
             border: none;
             color: $primary;
             margin-top: -1px;
-
             i {
               border: 1px solid $primary;
             }
@@ -357,11 +386,11 @@ Header {
             position: absolute;
             vertical-align: middle;
             height: 1px;
-            width: 45%;
+            width: 42.5%;
             top: 50%;
             left: 0;
             display: inline-block;
-            background: red;
+            background: $primary;
           }
 
           &:after {
@@ -369,11 +398,11 @@ Header {
             position: absolute;
             vertical-align: middle;
             height: 1px;
-            width: 45%;
+            width: 42.5%;
             top: 50%;
             right: 0;
             display: inline-block;
-            background: red;
+            background: $primary;
           }
         }
       }
@@ -381,7 +410,7 @@ Header {
       .owl-nav {
         button {
           position: absolute;
-          top: 19px;
+          top:11px;
 
           &.owl-prev {
             left: 0;
@@ -393,7 +422,9 @@ Header {
 
           span {
             background: #fff;
-            font-size: 53px;
+            font-size: 66px;
+            font-weight: 100;
+            color: $primary;
           }
 
           &:focus {
@@ -477,7 +508,34 @@ Header {
   background-repeat: no-repeat;
   position: relative;
   background-color: #f9f9f9;
-
+  .owl-theme .owl-nav {
+    position: absolute;
+    width: 100%;
+      button {
+        position: absolute; 
+        background: #fff;
+        opacity: .9;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        &:focus {
+          background: #fff;
+          color: #333;
+          border-radius: 50%;
+          border: none;
+        }
+        &.owl-prev {
+          left: -30px;
+        }
+        &.owl-next {
+          right: -30px;
+        }
+        // &.disabled {
+        //   display: none;
+        // }
+      }
+  }
   .serve_inner_box {
     width: 960px;
     margin: 0 auto;
@@ -607,9 +665,9 @@ Header {
     display: inline-block;
     columns: 2;
     color: $content;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 40px;
-    line-height: 29px;
+    line-height: 30px;
 
     p {
       line-height: 29px;
@@ -617,16 +675,20 @@ Header {
   }
 
   .work_showcase {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+    .row {
+      align-items: center;
+    }
 
     .work_showcase_content {
       text-align: right;
-      font-size: 15px;
+      font-size: 16px;
       color: $content;
 
       p {
-        line-height: 29px;
+        line-height: 30px;
+        text-align: justify;
       }
 
       .round_Btn {
@@ -991,7 +1053,7 @@ Footer {
   h3 {
     font-weight: 900;
     span {
-      color: #ff6600;
+      color: $primary;
     }
   }
   .row {
@@ -1000,7 +1062,7 @@ Footer {
     }
   }
   button {
-    background: #ff6600;
+    background: $primary;
     color: #fff;
   }
 }
@@ -1036,9 +1098,12 @@ Header {
 }
 .home_section_layout {
   .home_section_details {
-    p {
-      line-height: 25px;
-    }
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    
   }
 }
 
@@ -1091,7 +1156,7 @@ section {
     }
     a {
       color: #fff !important;
-      background-color: #ff6600;
+      background-color: $primary;
       text-decoration: none;
       position: relative;
       font-size: 25px;
@@ -1103,7 +1168,7 @@ section {
         font-size: 15px;
         font-weight: 600;
         background-color: #fff;
-        color: #ff6600;
+        color: $primary;
         margin: 5px 2px 2px 2px;
         padding: 5px 10px;
         position: absolute;
@@ -1144,7 +1209,7 @@ section {
         font-size: 50px;
       }
       span {
-        color: #ff6600;
+        color: $primary;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
@@ -1152,7 +1217,7 @@ section {
           content: "\f061";
           font-family: FontAwesome;
           margin-left: 15px;
-          color: #ff6600;
+          color: $primary;
           background: #fff;
           // padding: 3px;
           // border-radius: 50%;
@@ -1170,7 +1235,7 @@ section {
         font-weight: 600;
         font-size: 20px;
         line-height: 23px;
-        color: #ff6600;
+        color: $primary;
       }
       h3 {
         font-weight: 600;
@@ -1197,7 +1262,7 @@ section {
   .subscribe {
     a {
       color: #fff !important;
-      background-color: #ff6600;
+      background-color: $primary;
       text-decoration: none;
       position: relative;
       padding: 5px;
@@ -1208,7 +1273,7 @@ section {
         font-size: 10px;
         font-weight: 600;
         background-color: #fff;
-        color: #ff6600;
+        color: $primary;
         margin: 0px 2px 2px 10px;
         padding: 6px 8px;
         border-radius: 50%;
@@ -1220,7 +1285,7 @@ section {
 }
 .blog-posts {
   h5 {
-    color: #ff6600;
+    color: $primary;
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
@@ -1253,7 +1318,7 @@ section {
       line-height: 60px;
       max-width: 550px;
       span {
-        color: #ff6600;
+        color: $primary;
       }
     }
     p {
@@ -1264,7 +1329,7 @@ section {
         font-weight: 500;
         font-size: 15px;
         line-height: 20px;
-        color: #ff6600;
+        color: $primary;
       }
     }
   }
@@ -1292,7 +1357,7 @@ section {
         content: " •  \f192   \f111  \f061";
         font-family: FontAwesome;
         margin-left: 15px;
-        color: #ff6600;
+        color: $primary;
       }
     }
   }
@@ -1302,7 +1367,7 @@ section {
   h2 {
     font-weight: 700;
     font-size: 7vh;
-    color: #ff6600;
+    color: $primary;
   }
   h3 {
     font-weight: 700;
@@ -1336,7 +1401,7 @@ section {
     font-weight: 700;
     font-size: 8vh;
     line-height: 70px;
-    color: #ff6600;
+    color: $primary;
   }
   p {
     font-weight: 600;
@@ -1386,14 +1451,14 @@ header {
     height: auto;
   }
   a {
-    background: #ff6600;
+    background: $primary;
     color: #fff;
     width: 100%;
     &::after {
       content: "\f061";
       font-family: FontAwesome;
       background: #fff;
-      color: #ff6600;
+      color: $primary;
       padding: 1px 6px;
       // margin-left: 10px;
       border-radius: 50%;
@@ -1417,7 +1482,7 @@ header {
   }
 }
 .carrer2-deliver {
-  background: #ff6600;
+  background: $primary;
   h3 {
     font-weight: 300;
     line-height: 40px;
@@ -1466,12 +1531,12 @@ header {
   }
   a {
     color: #ffffff;
-    background: #ff6600;
+    background: $primary;
     &::after {
       content: "\f061";
       font-family: FontAwesome;
       margin-left: 15px;
-      color: #ff6600;
+      color: $primary;
       background: #fff;
       padding: 3px;
       border-radius: 50%;
@@ -1490,12 +1555,12 @@ header {
   }
   a {
     color: #ffffff;
-    background: #ff6600;
+    background: $primary;
     &::after {
       content: "\f061";
       font-family: FontAwesome;
       margin-left: 15px;
-      color: #ff6600;
+      color: $primary;
       background: #fff;
       padding: 3px;
       border-radius: 50%;
@@ -1513,7 +1578,7 @@ header {
     line-height: 30px;
   }
   a {
-    background: #ff6600;
+    background: $primary;
     color: #fff;
     font-weight: 500;
     &::after {
@@ -1556,7 +1621,7 @@ header {
   }
   a {
     color: #fff;
-    background: #ff6600;
+    background: $primary;
     &::after {
       margin-left: 20px;
       content: "\f061";
@@ -1638,7 +1703,7 @@ header {
 
 
 .call-tab {
-  background-color: #ff6600;
+  background-color: $primary;
   h3 {
     color: #fff;
     font-weight: 600;

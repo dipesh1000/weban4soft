@@ -1,10 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/** -------------- Global Styles --------------- **/
 *,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1,
@@ -22,14 +23,14 @@ a {
 }
 
 a:hover {
-  color: #ff4500;
+  color: #FF5B00;
   text-decoration: underline;
 }
 
 .round_Btn {
   padding: 0.4em 2.5em 0.4em 1em;
   border-radius: 20px;
-  background-color: #ff4500;
+  background-color: #FF5B00;
   color: #fff !important;
   display: inline-block;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
@@ -47,7 +48,7 @@ a:hover {
   font-size: 10px;
   font-weight: 600;
   background-color: #fff;
-  color: #ff4500;
+  color: #FF5B00;
   padding: 3px 7px;
   position: absolute;
   border-radius: 50%;
@@ -56,7 +57,7 @@ a:hover {
 }
 
 .trans_btn {
-  color: #ff4500;
+  color: #FF5B00;
   text-transform: uppercase;
 }
 
@@ -85,7 +86,7 @@ Header .top_Nav {
 }
 
 Header .top_Nav .logo_Container {
-  width: 200px;
+  width: 180px;
 }
 
 Header .top_Nav .logo_Container img {
@@ -102,6 +103,9 @@ Header .top_Nav .top_Nav_Menus {
 }
 
 Header .top_Nav .top_Nav_Menus ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,11 +118,33 @@ Header .top_Nav .top_Nav_Menus ul li {
   padding: 1em;
 }
 
+Header .top_Nav .top_Nav_Menus ul li .menuitem_main {
+  text-decoration: none;
+  position: relative;
+}
+
+Header .top_Nav .top_Nav_Menus ul li .menuitem_main::after {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  background: transparent;
+  content: '';
+  height: 2px;
+  display: block;
+  top: 35px;
+  width: 0;
+}
+
+Header .top_Nav .top_Nav_Menus ul li .menuitem_main:hover::after {
+  width: 100%;
+  background: #FF5B00;
+}
+
 Header .top_Nav .top_Nav_Menus button {
   margin-left: "10px";
   border: none;
   background-color: transparent;
-  color: #ff4500;
+  color: #FF5B00;
   width: 20px;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -145,9 +171,10 @@ Header .banner .head_text {
 }
 
 Header .banner .head_text h1 {
-  font-size: 5vw;
-  font-weight: 900;
-  color: #ff4500;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 70px;
+  color: #FF5B00;
   margin-bottom: 48px;
 }
 
@@ -210,7 +237,7 @@ Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a {
 
 Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a:hover {
   text-decoration: none;
-  color: #ff4500;
+  color: #FF5B00;
 }
 
 Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1.nav_Num {
@@ -263,22 +290,29 @@ Header .side_Toggle_Box .active {
   margin-top: 20px;
 }
 
-.home_section_layout .home_section_titles small.subtitles {
-  line-height: 20px;
+.home_section_layout .home_section_titles .subtitles {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .home_section_layout .home_section_titles h1 {
   max-width: 341px;
   color: #111;
+  font-family: 'Raleway';
+  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 50px;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 .home_section_layout .home_section_titles h1 span {
-  color: #ff4500;
+  color: #FF5B00;
 }
 
+/** -------------- Ends Global Styles --------------- **/
 .our_concepts {
   background-image: url("/img/mud-pot.png");
   background-size: cover;
@@ -305,7 +339,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .service_Item span {
-  color: #ff4500;
+  color: #FF5B00;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link {
@@ -316,17 +350,17 @@ Header .side_Toggle_Box .active {
 .service_box .tabs-area .nav-tabs .nav-item .nav-link i {
   border: none;
   border-radius: 50%;
-  padding: 0.34em 0.45em;
+  padding: 0.7em 0.81em;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link.active {
   border: none;
-  color: #ff4500;
+  color: #FF5B00;
   margin-top: -1px;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link.active i {
-  border: 1px solid #ff4500;
+  border: 1px solid #FF5B00;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link:hover {
@@ -338,11 +372,11 @@ Header .side_Toggle_Box .active {
   position: absolute;
   vertical-align: middle;
   height: 1px;
-  width: 45%;
+  width: 42.5%;
   top: 50%;
   left: 0;
   display: inline-block;
-  background: red;
+  background: #FF5B00;
 }
 
 .service_box .tabs-area .nav-tabs .nav-item .nav-link:after {
@@ -350,16 +384,16 @@ Header .side_Toggle_Box .active {
   position: absolute;
   vertical-align: middle;
   height: 1px;
-  width: 45%;
+  width: 42.5%;
   top: 50%;
   right: 0;
   display: inline-block;
-  background: red;
+  background: #FF5B00;
 }
 
 .service_box .tabs-area .nav-tabs .owl-nav button {
   position: absolute;
-  top: 19px;
+  top: 11px;
 }
 
 .service_box .tabs-area .nav-tabs .owl-nav button.owl-prev {
@@ -372,7 +406,9 @@ Header .side_Toggle_Box .active {
 
 .service_box .tabs-area .nav-tabs .owl-nav button span {
   background: #fff;
-  font-size: 53px;
+  font-size: 66px;
+  font-weight: 100;
+  color: #FF5B00;
 }
 
 .service_box .tabs-area .nav-tabs .owl-nav button:focus {
@@ -395,7 +431,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .service_inner_box .service_title h2 span {
-  color: #ff4500;
+  color: #FF5B00;
 }
 
 .service_box .tabs-area .service_inner_box .service_title .text_bolder {
@@ -434,7 +470,7 @@ Header .side_Toggle_Box .active {
 }
 
 .service_box .tabs-area .service_inner_box .service_in_List li::marker {
-  color: #ff4500;
+  color: #FF5B00;
 }
 
 .service_box .tabs-area .service_inner_box .service_in_List li a {
@@ -447,6 +483,37 @@ Header .side_Toggle_Box .active {
   background-repeat: no-repeat;
   position: relative;
   background-color: #f9f9f9;
+}
+
+.we_serve_box .owl-theme .owl-nav {
+  position: absolute;
+  width: 100%;
+}
+
+.we_serve_box .owl-theme .owl-nav button {
+  position: absolute;
+  background: #fff;
+  opacity: .9;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.we_serve_box .owl-theme .owl-nav button:focus {
+  background: #fff;
+  color: #333;
+  border-radius: 50%;
+  border: none;
+}
+
+.we_serve_box .owl-theme .owl-nav button.owl-prev {
+  left: -30px;
+}
+
+.we_serve_box .owl-theme .owl-nav button.owl-next {
+  right: -30px;
 }
 
 .we_serve_box .serve_inner_box {
@@ -497,7 +564,7 @@ Header .side_Toggle_Box .active {
 
 .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector {
   color: #fff;
-  background-color: #ff4500;
+  background-color: #FF5B00;
   border-radius: 3px;
 }
 
@@ -515,7 +582,7 @@ Header .side_Toggle_Box .active {
 
 .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector {
   color: #fff;
-  background-color: #ff4500;
+  background-color: #FF5B00;
   border-radius: 3px;
 }
 
@@ -549,7 +616,7 @@ Header .side_Toggle_Box .active {
 }
 
 .we_serve_box .serve_inner_box .serve_conent_box .service_list_box li::marker {
-  color: #ff4500;
+  color: #FF5B00;
 }
 
 .we_serve_box .serve_inner_box .image_container {
@@ -558,7 +625,7 @@ Header .side_Toggle_Box .active {
 
 .we_serve_box .serve_inner_box .image_container i {
   font-size: 120px;
-  color: #ff4500;
+  color: #FF5B00;
 }
 
 .we_serve_box .bg_img-industry {
@@ -579,9 +646,9 @@ Header .side_Toggle_Box .active {
   -webkit-columns: 2;
           columns: 2;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 40px;
-  line-height: 29px;
+  line-height: 30px;
 }
 
 .work_box .works_main_contents p {
@@ -589,18 +656,25 @@ Header .side_Toggle_Box .active {
 }
 
 .work_box .work_showcase {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.work_box .work_showcase .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .work_box .work_showcase .work_showcase_content {
   text-align: right;
-  font-size: 15px;
+  font-size: 16px;
   color: rgba(0, 0, 0, 0.6);
 }
 
 .work_box .work_showcase .work_showcase_content p {
-  line-height: 29px;
+  line-height: 30px;
+  text-align: justify;
 }
 
 .work_box .work_showcase .work_showcase_content .round_Btn {
@@ -611,7 +685,7 @@ Header .side_Toggle_Box .active {
 }
 
 .work_box .work_showcase .work_showcase_content .round_Btn:hover {
-  background-color: #ff4500;
+  background-color: #FF5B00;
   color: #fff !important;
 }
 
@@ -687,7 +761,7 @@ Header .side_Toggle_Box .active {
 }
 
 .blog_box .blog_item_slider .blog_items .blog_item .blog_content_box .blog_contents .blog__content h4 {
-  color: #ff4500;
+  color: #FF5B00;
   font-size: 20px;
   line-height: 25px;
 }
@@ -791,7 +865,7 @@ Header .side_Toggle_Box .active {
 }
 
 .testinomial_box .testinomial_container .testinomial_content_box a {
-  color: #ff4500;
+  color: #FF5B00;
 }
 
 .testinomial_box .testinomial_container .testinomial_content_img {
@@ -934,7 +1008,7 @@ Footer .copy_right {
 }
 
 .work_with_us_section h3 span {
-  color: #ff6600;
+  color: #FF5B00;
 }
 
 .work_with_us_section .row p {
@@ -942,7 +1016,7 @@ Footer .copy_right {
 }
 
 .work_with_us_section button {
-  background: #ff6600;
+  background: #FF5B00;
   color: #fff;
 }
 
@@ -958,7 +1032,7 @@ Header .banner .aboutus_head_text h1 {
 }
 
 Header .banner .aboutus_head_text h1 span {
-  color: #ff4500;
+  color: #FF5B00;
   margin-bottom: 48px;
 }
 
@@ -971,8 +1045,12 @@ Header .banner .about-banner-details p {
   font-weight: 500;
 }
 
-.home_section_layout .home_section_details p {
-  line-height: 25px;
+.home_section_layout .home_section_details {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 /* -----aboutus page ends ----------------------------------------------- */
@@ -1015,7 +1093,7 @@ section .banner h2 span {
 
 section .banner a {
   color: #fff !important;
-  background-color: #ff6600;
+  background-color: #FF5B00;
   text-decoration: none;
   position: relative;
   font-size: 25px;
@@ -1028,7 +1106,7 @@ section .banner a::after {
   font-size: 15px;
   font-weight: 600;
   background-color: #fff;
-  color: #ff6600;
+  color: #FF5B00;
   margin: 5px 2px 2px 2px;
   padding: 5px 10px;
   position: absolute;
@@ -1061,7 +1139,7 @@ section .banner .banner-left h1 {
 }
 
 section .banner .banner-left span {
-  color: #ff6600;
+  color: #FF5B00;
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
@@ -1071,7 +1149,7 @@ section .banner .banner-left span::after {
   content: "\f061";
   font-family: FontAwesome;
   margin-left: 15px;
-  color: #ff6600;
+  color: #FF5B00;
   background: #fff;
   position: relative;
   top: -5px;
@@ -1084,7 +1162,7 @@ section .banner .blog-banner-right p {
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
-  color: #ff6600;
+  color: #FF5B00;
 }
 
 section .banner .blog-banner-right h3 {
@@ -1111,7 +1189,7 @@ section .banner .blog-banner-right span {
 
 .blog-tab .subscribe a {
   color: #fff !important;
-  background-color: #ff6600;
+  background-color: #FF5B00;
   text-decoration: none;
   position: relative;
   padding: 5px;
@@ -1124,7 +1202,7 @@ section .banner .blog-banner-right span {
   font-size: 10px;
   font-weight: 600;
   background-color: #fff;
-  color: #ff6600;
+  color: #FF5B00;
   margin: 0px 2px 2px 10px;
   padding: 6px 8px;
   border-radius: 50%;
@@ -1133,7 +1211,7 @@ section .banner .blog-banner-right span {
 }
 
 .blog-posts h5 {
-  color: #ff6600;
+  color: #FF5B00;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
@@ -1164,7 +1242,7 @@ section .banner h2 {
 }
 
 section .banner h2 span {
-  color: #ff6600;
+  color: #FF5B00;
 }
 
 section .banner p {
@@ -1177,7 +1255,7 @@ section .banner p span {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #ff6600;
+  color: #FF5B00;
 }
 
 section .section-card {
@@ -1209,7 +1287,7 @@ section .section-card span::after {
   content: " •  \f192   \f111  \f061";
   font-family: FontAwesome;
   margin-left: 15px;
-  color: #ff6600;
+  color: #FF5B00;
 }
 
 .career-culture {
@@ -1219,7 +1297,7 @@ section .section-card span::after {
 .career-culture h2 {
   font-weight: 700;
   font-size: 7vh;
-  color: #ff6600;
+  color: #FF5B00;
 }
 
 .career-culture h3 {
@@ -1258,7 +1336,7 @@ section .section-card span::after {
   font-weight: 700;
   font-size: 8vh;
   line-height: 70px;
-  color: #ff6600;
+  color: #FF5B00;
 }
 
 .career-end-title p {
@@ -1312,7 +1390,7 @@ header .banner-details p {
 }
 
 .career-services a {
-  background: #ff6600;
+  background: #FF5B00;
   color: #fff;
   width: 100%;
 }
@@ -1321,7 +1399,7 @@ header .banner-details p {
   content: "\f061";
   font-family: FontAwesome;
   background: #fff;
-  color: #ff6600;
+  color: #FF5B00;
   padding: 1px 6px;
   border-radius: 50%;
 }
@@ -1343,7 +1421,7 @@ header .banner-details p {
 }
 
 .carrer2-deliver {
-  background: #ff6600;
+  background: #FF5B00;
 }
 
 .carrer2-deliver h3 {
@@ -1401,14 +1479,14 @@ header .banner-details p {
 
 .career2-insights a {
   color: #ffffff;
-  background: #ff6600;
+  background: #FF5B00;
 }
 
 .career2-insights a::after {
   content: "\f061";
   font-family: FontAwesome;
   margin-left: 15px;
-  color: #ff6600;
+  color: #FF5B00;
   background: #fff;
   padding: 3px;
   border-radius: 50%;
@@ -1430,14 +1508,14 @@ header .banner-details p {
 
 .career2-workwithus a {
   color: #ffffff;
-  background: #ff6600;
+  background: #FF5B00;
 }
 
 .career2-workwithus a::after {
   content: "\f061";
   font-family: FontAwesome;
   margin-left: 15px;
-  color: #ff6600;
+  color: #FF5B00;
   background: #fff;
   padding: 3px;
   border-radius: 50%;
@@ -1451,7 +1529,7 @@ header .banner-details p {
 }
 
 .career3-banner a {
-  background: #ff6600;
+  background: #FF5B00;
   color: #fff;
   font-weight: 500;
 }
@@ -1495,7 +1573,7 @@ header .banner-details p {
 
 .career3-mid-banner a {
   color: #fff;
-  background: #ff6600;
+  background: #FF5B00;
 }
 
 .career3-mid-banner a::after {
@@ -1568,7 +1646,7 @@ header .banner-details p {
 }
 
 .call-tab {
-  background-color: #ff6600;
+  background-color: #FF5B00;
 }
 
 .call-tab h3 {
@@ -1688,7 +1766,7 @@ header .banner-details p {
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector {
     color: #fff;
-    background-color: #ff4500;
+    background-color: #FF5B00;
     border-radius: 3px;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link.active .icon_by_sector i {
@@ -1702,7 +1780,7 @@ header .banner-details p {
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector {
     color: #fff;
-    background-color: #ff4500;
+    background-color: #FF5B00;
     border-radius: 3px;
   }
   .we_serve_box .serve_inner_box .nav-pills .nav-item .nav-link:hover .icon_by_sector i {
@@ -1725,14 +1803,14 @@ header .banner-details p {
     margin-bottom: 15px;
   }
   .we_serve_box .serve_inner_box .serve_conent_box .service_list_box li::marker {
-    color: #ff4500;
+    color: #FF5B00;
   }
   .we_serve_box .serve_inner_box .image_container {
     text-align: center;
   }
   .we_serve_box .serve_inner_box .image_container i {
     font-size: 120px;
-    color: #ff4500;
+    color: #FF5B00;
   }
   .we_serve_box .bg_img-industry {
     background-image: url("/img/industry-bg.png");
