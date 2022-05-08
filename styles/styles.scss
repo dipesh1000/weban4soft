@@ -81,10 +81,13 @@ a {
 
 Header {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
-
+  height: 780px;
+  .top_Nav_Wrap {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
   .top_Nav {
+    position: sticky;
+    top: 0;
     height: 100px;
     padding: 1em 0;
     display: flex;
@@ -149,34 +152,60 @@ Header {
   }
 
   .banner {
-    padding-top: 70px;
     height: 100%;
     align-items: center;
+    .banner_height {
+      height: 100%;
+    }
+    .banner_contentbox {
+      background-color: $secondary;
+      height: 87%;
+      width: 100%;
+    }
 
     .head_text {
-      margin-top: 100px;
       max-width: 500px;
-
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 60%;
+      margin: 0 auto;
+      justify-content: center;
+      .banner_taglines {
+        color: $primary;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
       h1 {
         font-weight: 800;
-        font-size: 60px;
+        font-size: 45px;
         line-height: 70px;
-        color: $primary;
-        margin-bottom: 48px;
+        color: #fff;
+        margin-bottom: 20px;
 
         span {
-          color: $heading;
+          color: $primary;
         }
+      }
+      .banner_subtitle {
+        color: #aaa;
+        font-size: 16px;
+        line-height: 30px;
       }
 
       a {
+        margin-top: 40px;
+        display: block;
+        width: 160px;
       }
     }
 
     .banner_image {
+      height: 87%;
+      display: flex;
+      align-items: center;
       padding-top: 40px;
-      width: 100%;
-
+      width: 90%;
       img {
         width: 100%;
       }

@@ -7,16 +7,45 @@
         }
     }
     Header {
+        overflow: hidden;
+        height: auto;
+        .top_Nav_Wrap {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            .top_Nav {
+                height: auto;
+                .logo_Container {
+                    width: 138px;
+                }
+            }
+        }
         .banner {
+            .banner_height {
+                height: auto;
+              }
+            flex-wrap: wrap-reverse;
             align-items: center;
-            .head_text {
-                margin-top: 10px;
-                max-width: 100%;
-                h1 {
-                    font-weight: 600;
-                    margin-bottom: 20px;
-                    span {
-                        color: $heading;
+            .banner_contentbox {
+                z-index: 1;
+                width: 94%;
+                margin: -20px auto 10px auto;
+                border-radius: 10px;
+                height: auto;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                .head_text {
+                    margin-top: 0;
+                    width: 100%;
+                    padding: 1.5em 15px;
+                    h1 {
+                        font-weight: 600;
+                        margin-bottom: 15px;
+                        font-size: 32px;
+                        line-height: 50px;
+                        span {
+                            color: $heading;
+                        }
+                    }
+                    a {
+                        margin-top: 18px;
                     }
                 }
             }

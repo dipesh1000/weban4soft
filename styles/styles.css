@@ -67,11 +67,18 @@ a:hover {
 
 Header {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  height: 780px;
+}
+
+Header .top_Nav_Wrap {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 Header .top_Nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   height: 100px;
   padding: 1em 0;
   display: -webkit-box;
@@ -158,33 +165,79 @@ Header .top_Nav .top_Nav_Menus button:focus {
 }
 
 Header .banner {
-  padding-top: 70px;
   height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+Header .banner .banner_height {
+  height: 100%;
+}
+
+Header .banner .banner_contentbox {
+  background-color: #00225f;
+  height: 87%;
+  width: 100%;
+}
+
 Header .banner .head_text {
-  margin-top: 100px;
   max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+Header .banner .head_text .banner_taglines {
+  color: #FF5B00;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 Header .banner .head_text h1 {
   font-weight: 800;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 70px;
-  color: #FF5B00;
-  margin-bottom: 48px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 Header .banner .head_text h1 span {
-  color: #111;
+  color: #FF5B00;
+}
+
+Header .banner .head_text .banner_subtitle {
+  color: #aaa;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+Header .banner .head_text a {
+  margin-top: 40px;
+  display: block;
+  width: 160px;
 }
 
 Header .banner .banner_image {
+  height: 87%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 40px;
-  width: 100%;
+  width: 90%;
 }
 
 Header .banner .banner_image img {
@@ -1676,21 +1729,55 @@ header .banner-details p {
   .round_Btn::after {
     font-size: 8px;
   }
+  Header {
+    overflow: hidden;
+    height: auto;
+  }
+  Header .top_Nav_Wrap {
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  Header .top_Nav_Wrap .top_Nav {
+    height: auto;
+  }
+  Header .top_Nav_Wrap .top_Nav .logo_Container {
+    width: 138px;
+  }
   Header .banner {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  Header .banner .head_text {
-    margin-top: 10px;
-    max-width: 100%;
+  Header .banner .banner_height {
+    height: auto;
   }
-  Header .banner .head_text h1 {
+  Header .banner .banner_contentbox {
+    z-index: 1;
+    width: 94%;
+    margin: -20px auto 10px auto;
+    border-radius: 10px;
+    height: auto;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  Header .banner .banner_contentbox .head_text {
+    margin-top: 0;
+    width: 100%;
+    padding: 1.5em 15px;
+  }
+  Header .banner .banner_contentbox .head_text h1 {
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 50px;
   }
-  Header .banner .head_text h1 span {
+  Header .banner .banner_contentbox .head_text h1 span {
     color: #111;
+  }
+  Header .banner .banner_contentbox .head_text a {
+    margin-top: 18px;
   }
 }
 
