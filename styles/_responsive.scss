@@ -187,8 +187,12 @@
     }
 }
 @media only screen and (min-width: 1500px) { 
+    Header {
+        height: 960px;
+    }
     Header .banner .head_text h1 {
-        font-size: 4vw;
+        font-size: 3vw;
+        line-height: 87px;
     }
     h1 {
         font-weight: 700;
