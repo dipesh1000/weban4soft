@@ -53,12 +53,29 @@ $(document).ready(function () {
   var owl = $('.services');
   var blog = $('#blogs');
   var weServe = $('.weServe');
+  var banner = $('.mainbanner');
+  var philosophy = $('#philosophy_slide');
+  var facts = $('#facts_slider');
   owl.owlCarousel({
     items: 4,
     // items change number for slider display on desktop
     loop: true,
     autoplay: false,
     nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      750: {
+        items: 3,
+      },
+      900: {
+        items: 4,
+      },
+    },
   });
   blog.owlCarousel({
     items: 1,
@@ -84,6 +101,60 @@ $(document).ready(function () {
       },
       900: {
         items: 6,
+      },
+    },
+  });
+  banner.owlCarousel({
+    items: 1,
+    // items change number for slider display on desktop
+    loop: true,
+    margin: 10,
+    nav: true,
+    smartSpeed: 2000,
+    autoplay: false,
+    autoplayTimeout: 8000,
+    autoplayHoverPause: true,
+  });
+  philosophy.owlCarousel({
+    margin: 20,
+    dots: false,
+    nav: true,
+    autoWidth: true,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      600: {
+        items: 4,
+      },
+      750: {
+        items: 4,
+      },
+      900: {
+        items: 4,
+      },
+    },
+  });
+  facts.owlCarousel({
+    margin: 20,
+    dots: false,
+    nav: false,
+    autoWidth: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 5000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      750: {
+        items: 2,
+      },
+      900: {
+        items: 2,
       },
     },
   });

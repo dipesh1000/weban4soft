@@ -67,7 +67,8 @@ a:hover {
 
 Header {
   position: relative;
-  height: 780px;
+  overflow: hidden;
+  height: 100vh;
 }
 
 Header .top_Nav_Wrap {
@@ -164,6 +165,127 @@ Header .top_Nav .top_Nav_Menus button:focus {
   outline: none;
 }
 
+Header .mainbanner {
+  height: 700px;
+}
+
+Header .mainbanner .mainbanner-inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+}
+
+Header .mainbanner .banner_height {
+  height: 100%;
+}
+
+Header .mainbanner .banner_contentbox {
+  background-color: #00225f;
+  height: 100%;
+  width: 100%;
+}
+
+Header .mainbanner .head_text {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+Header .mainbanner .head_text .banner_taglines {
+  color: #FF5B00;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+Header .mainbanner .head_text h1 {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 70px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+Header .mainbanner .head_text h1 span {
+  color: #FF5B00;
+}
+
+Header .mainbanner .head_text .banner_subtitle {
+  color: #aaa;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+Header .mainbanner .head_text a {
+  margin-top: 40px;
+  display: block;
+  width: 160px;
+}
+
+Header .mainbanner .banner_image {
+  height: 87%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  width: 90%;
+}
+
+Header .mainbanner .banner_image img {
+  width: 100%;
+}
+
+Header .mainbanner .owl-nav {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+Header .mainbanner .owl-nav button {
+  position: absolute;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+Header .mainbanner .owl-nav button.owl-prev {
+  position: absolute;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  z-index: 11111;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+Header .mainbanner .owl-nav button.owl-next {
+  right: 0;
+}
+
+Header .mainbanner .owl-nav button:focus {
+  background-color: #fff;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 Header .banner {
   height: 100%;
   -webkit-box-align: center;
@@ -177,7 +299,7 @@ Header .banner .banner_height {
 
 Header .banner .banner_contentbox {
   background-color: #00225f;
-  height: 87%;
+  height: 100%;
   width: 100%;
 }
 
@@ -1012,6 +1134,7 @@ Header .side_Toggle_Box .active {
 }
 
 Footer img {
+  width: 100%;
   padding-top: 15px;
 }
 
@@ -1106,7 +1229,518 @@ Header .banner .about-banner-details p {
   line-height: 30px;
 }
 
+.higlight_section {
+  margin-top: 80px;
+  font-family: 'Raleway';
+  padding: 4em 0;
+}
+
+.higlight_section .highlight_content {
+  margin-bottom: 15px;
+}
+
+.higlight_section .highlight_content .higlight_title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 35px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.higlight_section .highlight_content .highlight_subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: justify;
+}
+
+.higlight_section .vision_statement {
+  padding-top: 1em;
+}
+
+.higlight_section .vision_statement .nav-pills {
+  width: 200px;
+}
+
+.higlight_section .vision_statement .nav-pills .nav-link {
+  padding: 0;
+  outline: none;
+  border: none;
+  text-align: left;
+  background-color: transparent;
+}
+
+.higlight_section .vision_statement .nav-pills .nav-link.active {
+  background-color: transparent;
+}
+
+.higlight_section .vision_statement .nav-pills .nav-link.active h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  margin-bottom: 0;
+}
+
+.higlight_section .vision_statement .nav-pills .nav-link.active h4::before {
+  content: '';
+  height: 100%;
+  margin-right: 15px;
+  width: 5px;
+  background-color: #FF5B00;
+  display: inline-block;
+}
+
+.higlight_section .vision_statement .nav-pills .nav-link h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  margin-bottom: 0;
+}
+
+.higlight_section .vision_statement .nav-pills .nav-link h4::before {
+  content: '';
+  height: 100%;
+  margin-right: 15px;
+  width: 5px;
+  background-color: #A8E4FF;
+  display: inline-block;
+}
+
+.higlight_section .vision_statement .tab-content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.higlight_section .vision_statement .tab-content h1 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+
+.higlight_section .vision_statement .tab-content p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+}
+
+.our_corevalues .home_section_titles.title_margin {
+  margin-bottom: 20px;
+}
+
+.our_corevalues .home_section_titles h1 {
+  max-width: 538px;
+  font-size: 37px;
+  line-height: 53px;
+}
+
+.our_corevalues .trives_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our_corevalues .trives_list .trive {
+  width: 180px;
+  padding: 0.5em 1em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.our_corevalues .trives_list .trive img {
+  max-width: 156px;
+}
+
+.our_corevalues .trives_list .trive span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 35px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.our_phylosophy .container {
+  max-width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.our_phylosophy .home_section_titles h1 {
+  font-size: 37px;
+  line-height: 53px;
+  max-width: 100%;
+}
+
+.our_phylosophy .phylosophy_list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.our_phylosophy .phylosophy_list .phylosophy {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 265px;
+  height: 369px;
+  background: rgba(249, 249, 249, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 2.5em 1.5em;
+  margin-bottom: 15px;
+}
+
+.our_phylosophy .phylosophy_list .phylosophy h1 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 38px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.our_phylosophy .phylosophy_list .phylosophy span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.our_phylosophy .phylosophy_list .phylosophy:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.our_phylosophy .phylosophy_list .phylosophy:hover::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  top: 20%;
+  right: 5%;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 35px;
+  color: rgba(158, 158, 158, 0.25);
+}
+
+.our_phylosophy .phylosophy_list .phylosophy.one:hover::after {
+  content: '01';
+}
+
+.our_phylosophy .phylosophy_list .phylosophy.two:hover::after {
+  content: '02';
+}
+
+.our_phylosophy .phylosophy_list .phylosophy.three:hover::after {
+  content: '03';
+}
+
+.our_phylosophy .phylosophy_list .phylosophy.four:hover::after {
+  content: '04';
+}
+
+.our_phylosophy .phylosophy_list .phylosophy.five:hover::after {
+  content: '05';
+}
+
+.our_phylosophy .phylosophy_list .phylosophy.six:hover::after {
+  content: '06';
+}
+
+.our_phylosophy .phylosophy_list .owl-nav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  background-color: #ffffffe6;
+  padding: 1em 2em !important;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_phylosophy .phylosophy_list .owl-nav button.disabled {
+  display: none;
+}
+
+.our_phylosophy .phylosophy_list .owl-nav button.owl-next {
+  right: 0;
+}
+
+.our_phylosophy .phylosophy_list .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.our_phylosophy .phylosophy_list .owl-nav button:focus {
+  outline: none;
+}
+
+.inpiration_section {
+  padding: 5em 0;
+  background-color: #000425;
+  height: 850px;
+}
+
+.inpiration_section .container {
+  max-width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  margin-right: 0;
+  padding-right: 0;
+  height: 100%;
+}
+
+.inpiration_section .inspire_box {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inpiration_section .inspire_box .inspire_content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 450px;
+}
+
+.inpiration_section .inspire_box .inspire_content h1 {
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+}
+
+.inpiration_section .inspire_box .inspire_lists {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box {
+  position: absolute;
+  max-width: 130px;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.image_large {
+  max-width: 260px;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box img {
+  max-width: 100%;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box .image_overlay {
+  position: relative;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box .image_overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(355.67deg, #000425 -23.68%, rgba(0, 4, 37, 0) 105.7%);
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.one {
+  top: 0;
+  left: 0;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.two {
+  top: 0;
+  right: 32%;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.three {
+  top: 0;
+  right: 0;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.four {
+  top: 36%;
+  left: 0;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.five {
+  top: 30%;
+  right: 10%;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.six {
+  top: 55%;
+  left: 20%;
+}
+
+.inpiration_section .inspire_box .inspire_lists .image_box.seven {
+  top: 75%;
+  right: 13%;
+}
+
+.inpiration_section .inspire_box .inspire_lists .text_box {
+  position: absolute;
+  top: 36%;
+  right: 32%;
+  max-width: 325px;
+}
+
+.inpiration_section .inspire_box .inspire_lists .text_box h3 {
+  color: #fff;
+}
+
+.our_facts {
+  background: rgba(240, 240, 240, 0.7);
+  padding: 4em 0;
+}
+
+.our_facts .container {
+  max-width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.our_facts .record_list .number {
+  width: 550px;
+}
+
+.our_facts .record_list .number h1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 200px;
+  margin-bottom: 0;
+}
+
+.our_facts .record_list .number h1.primary {
+  color: #FF5B00;
+}
+
 /* -----aboutus page ends ----------------------------------------------- */
+.team_overview {
+  padding: 4em;
+}
+
+.team_overview .team_box_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team_overview .team_box_list .team_box {
+  margin-bottom: 15px;
+  width: 24%;
+  height: 296px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.team_overview .team_box_list .team_box .image_box {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team_overview .team_box_list .team_box .image_box .content {
+  display: none;
+}
+
+.team_overview .team_box_list .team_box .text_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.team_overview .team_box_list .team_box .text_box h1 {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 45px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.team_overview .team_box_list .team_box .text_box span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.team_overview .team_box_list .team_box:hover {
+  cursor: pointer;
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.team_overview .team_box_list .team_box:hover .image_box {
+  height: 100%;
+}
+
+.team_overview .team_box_list .team_box:hover .image_box .content {
+  background: linear-gradient(1.88deg, #000000 1.43%, rgba(0, 0, 0, 0) 62.67%) !important;
+  padding-bottom: 15%;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* -----Team page ends ----------------------------------------------- */
+/* -----Team page ends ----------------------------------------------- */
 /* -----contact page starts ----------------------------------------------- */
 section .banner span {
   font-style: normal;
@@ -1743,17 +2377,17 @@ header .banner-details p {
   Header .top_Nav_Wrap .top_Nav .logo_Container {
     width: 138px;
   }
-  Header .banner {
+  Header .mainbanner .mainbanner-inner {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  Header .banner .banner_height {
+  Header .mainbanner .mainbanner-inner .banner_height {
     height: auto;
   }
-  Header .banner .banner_contentbox {
+  Header .mainbanner .mainbanner-inner .banner_contentbox {
     z-index: 1;
     width: 94%;
     margin: -20px auto 10px auto;
@@ -1762,22 +2396,49 @@ header .banner-details p {
     -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  Header .banner .banner_contentbox .head_text {
+  Header .mainbanner .mainbanner-inner .banner_contentbox .head_text {
     margin-top: 0;
     width: 100%;
     padding: 1.5em 15px;
   }
-  Header .banner .banner_contentbox .head_text h1 {
+  Header .mainbanner .mainbanner-inner .banner_contentbox .head_text h1 {
     font-weight: 600;
     margin-bottom: 15px;
     font-size: 32px;
     line-height: 50px;
   }
-  Header .banner .banner_contentbox .head_text h1 span {
+  Header .mainbanner .mainbanner-inner .banner_contentbox .head_text h1 span {
     color: #111;
   }
-  Header .banner .banner_contentbox .head_text a {
+  Header .mainbanner .mainbanner-inner .banner_contentbox .head_text a {
     margin-top: 18px;
+  }
+  Header .mainbanner .mainbanner-inner .banner_image {
+    width: 100%;
+    padding: 1em;
+  }
+  .service_box_mbl {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    margin-bottom: 15px;
+    padding: 1em;
+    border-right: 5px solid #FF5B00;
+  }
+  .service_box_mbl:nth-child(even) {
+    border-right: 5px solid #00225f;
+  }
+  .work_box .works_main_contents {
+    -webkit-columns: 1;
+            columns: 1;
+  }
+  .work_box .works_main_contents p {
+    text-align: justify;
+  }
+  .work_box .work_showcase .work_showcase_content {
+    text-align: left;
+  }
+  .work_box .work_showcase .round_Btn {
+    margin-top: 15px;
   }
 }
 

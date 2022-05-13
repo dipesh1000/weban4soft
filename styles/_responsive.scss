@@ -18,36 +18,69 @@
                 }
             }
         }
-        .banner {
-            .banner_height {
-                height: auto;
-              }
-            flex-wrap: wrap-reverse;
-            align-items: center;
-            .banner_contentbox {
-                z-index: 1;
-                width: 94%;
-                margin: -20px auto 10px auto;
-                border-radius: 10px;
-                height: auto;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                .head_text {
-                    margin-top: 0;
-                    width: 100%;
-                    padding: 1.5em 15px;
-                    h1 {
-                        font-weight: 600;
-                        margin-bottom: 15px;
-                        font-size: 32px;
-                        line-height: 50px;
-                        span {
-                            color: $heading;
+        .mainbanner {
+            .mainbanner-inner {
+                .banner_height {
+                    height: auto;
+                  }
+                flex-wrap: wrap-reverse;
+                align-items: center;
+                .banner_contentbox {
+                    z-index: 1;
+                    width: 94%;
+                    margin: -20px auto 10px auto;
+                    border-radius: 10px;
+                    height: auto;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    .head_text {
+                        margin-top: 0;
+                        width: 100%;
+                        padding: 1.5em 15px;
+                        h1 {
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                            font-size: 32px;
+                            line-height: 50px;
+                            span {
+                                color: $heading;
+                            }
+                        }
+                        a {
+                            margin-top: 18px;
                         }
                     }
-                    a {
-                        margin-top: 18px;
-                    }
                 }
+                .banner_image {
+                    width: 100%;
+                    padding: 1em;
+                }
+            }
+        }
+    }
+    .service_box_mbl {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        margin-bottom: 15px;
+        padding: 1em;
+        border-right: 5px solid $primary;
+       &:nth-child(even) {
+        border-right: 5px solid $secondary;
+       }
+    } 
+    .work_box {
+        .works_main_contents {
+            columns: 1;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+    .work_box{
+        .work_showcase {
+            .work_showcase_content {
+                text-align: left;
+            }
+            .round_Btn {
+                margin-top: 15px;
             }
         }
     } 
