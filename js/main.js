@@ -56,6 +56,7 @@ $(document).ready(function () {
   var banner = $('.mainbanner');
   var philosophy = $('#philosophy_slide');
   var facts = $('#facts_slider');
+  var seemore = $('#seemore');
   owl.owlCarousel({
     items: 4,
     // items change number for slider display on desktop
@@ -142,6 +143,31 @@ $(document).ready(function () {
     autoWidth: true,
     autoplay: true,
     autoplayTimeout: 5000,
+    smartSpeed: 5000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      750: {
+        items: 2,
+      },
+      900: {
+        items: 2,
+      },
+    },
+  });
+  seemore.owlCarousel({
+    margin: 20,
+    dots: false,
+    nav: false,
+    loop: true,
+    autoWidth: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     smartSpeed: 5000,
     responsive: {
       0: {

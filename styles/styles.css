@@ -68,7 +68,6 @@ a:hover {
 Header {
   position: relative;
   overflow: hidden;
-  height: 100vh;
 }
 
 Header .top_Nav_Wrap {
@@ -366,7 +365,7 @@ Header .banner .banner_image img {
   width: 100%;
 }
 
-Header .side_Toggle_Box .toggle_Box {
+.side_Toggle_Box .toggle_Box {
   position: absolute;
   top: 0;
   right: 0;
@@ -378,44 +377,44 @@ Header .side_Toggle_Box .toggle_Box {
   transition: margin-right 2s;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .top_Nav .logo_Container {
+.side_Toggle_Box .toggle_Box .inner_Box .top_Nav .logo_Container {
   width: 200px;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .top_Nav .logo_Container img {
+.side_Toggle_Box .toggle_Box .inner_Box .top_Nav .logo_Container img {
   width: 100%;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .top_Nav .top_Nav_Menus ul li a {
+.side_Toggle_Box .toggle_Box .inner_Box .top_Nav .top_Nav_Menus ul li a {
   color: #fff;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table {
+.side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table {
   margin-left: auto;
   width: 500px;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td.menu_title {
+.side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td.menu_title {
   max-width: 250px;
   text-align: right;
   text-transform: uppercase;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 {
+.side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 {
   color: #fff;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a {
+.side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a {
   font-size: 36px;
   color: #fff;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a:hover {
+.side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1 a:hover {
   text-decoration: none;
   color: #FF5B00;
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1.nav_Num {
+.side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1.nav_Num {
   text-align: center;
   height: 66px;
   font-size: 28px;
@@ -425,7 +424,7 @@ Header .side_Toggle_Box .toggle_Box .inner_Box .main_Side_Nav table tr td h1.nav
           transform: rotate(270deg);
 }
 
-Header .side_Toggle_Box .toggle_Box .inner_Box .bg_Image_Container {
+.side_Toggle_Box .toggle_Box .inner_Box .bg_Image_Container {
   width: 100%;
   height: 200px;
   display: inline-block;
@@ -435,7 +434,7 @@ Header .side_Toggle_Box .toggle_Box .inner_Box .bg_Image_Container {
   z-index: 1;
 }
 
-Header .side_Toggle_Box .active {
+.side_Toggle_Box .active {
   width: 100%;
   margin-right: 0;
   -webkit-transform: translateX(0);
@@ -1133,6 +1132,260 @@ Header .side_Toggle_Box .active {
   filter: none;
 }
 
+.singlework {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.singlework .singlework_content {
+  padding: 16em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.singlework .singlework_content .single_content_top {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.singlework .singlework_content .single_content_top h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.singlework .singlework_content .view_button {
+  background-color: #FF5B00;
+  padding: 1em 2em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid transparent;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.singlework .singlework_content .view_button:hover {
+  border: 1px solid #FF5B00;
+  background-color: transparent;
+}
+
+.our_role {
+  background: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.our_role .role_content {
+  padding: 14em 0;
+  color: #fff;
+}
+
+.our_role .role_content h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 100px;
+  color: #FFFFFF;
+}
+
+.our_role .role_content .para_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 450px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+  color: #FFFFFF;
+  list-style: none;
+}
+
+.our_role .role_content .para_content li {
+  border: 1px dashed #fff;
+  padding: 1em;
+  margin: 0em 1em 1em 0;
+}
+
+.project_details {
+  padding: 5em 0;
+}
+
+.project_details .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project_details .project_content_box h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 100px;
+}
+
+.project_details .project_content_box .short_content {
+  font-size: 18px;
+  line-height: 34px;
+  text-align: justify;
+  color: #333;
+}
+
+.project_details .image_container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project_details .image_container img {
+  max-width: 90%;
+}
+
+.project_details .project_overview {
+  margin-top: 5em;
+}
+
+.project_details .project_overview .container {
+  max-width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  width: calc(((100% - 1140px) / 2) + 1140px) !important;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.project_details .project_overview .project_image img {
+  max-width: 100%;
+}
+
+.want_see_more {
+  padding-top: 4em;
+  background: #00225f;
+  margin-bottom: 100px;
+}
+
+.want_see_more .content {
+  margin-bottom: 4em;
+}
+
+.want_see_more .content h1 {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 65px;
+  color: #FFFFFF;
+}
+
+.want_see_more .content p {
+  max-width: 700px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.want_see_more .list_slider .porduct_item {
+  width: 410px;
+  text-align: center;
+  background: #ddd;
+}
+
+.want_see_more .list_slider .porduct_item .product_thumbnail {
+  width: 100%;
+  height: 396px;
+}
+
+.want_see_more .list_slider .porduct_item .product_thumbnail .overlay {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-12.12%, #000000), color-stop(99.12%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000000 -12.12%, rgba(0, 0, 0, 0) 99.12%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.want_see_more .list_slider .porduct_item .product_thumbnail a {
+  margin-bottom: 30px;
+  background: #fff;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.want_see_more .list_slider .porduct_item .product_thumbnail a svg {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.want_see_more .list_slider .porduct_item h4 {
+  padding: 10px 0;
+  background: #fff;
+  margin-bottom: 0;
+}
+
+.fresh_ideas {
+  background: #FF5B00;
+  padding: 4em;
+  margin-bottom: 4em;
+}
+
+.fresh_ideas h1 {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 65px;
+  color: #ffff;
+}
+
+.fresh_ideas .content {
+  width: 70%;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.fresh_ideas a {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: .8em 2em;
+  border-radius: 40px;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.fresh_ideas a:hover {
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #FF5B00;
+}
+
 Footer img {
   width: 100%;
   padding-top: 15px;
@@ -1823,6 +2076,7 @@ section .banner textarea:focus {
 section .banner .banner-left h1 {
   font-weight: 700;
   font-size: 50px;
+  line-height: 82px;
 }
 
 section .banner .banner-left span {
@@ -2355,6 +2609,17 @@ header .banner-details p {
 }
 
 /* -----portfolio page ends ----------------------------------------------- */
+/* For Mobile */
+@media only screen and (max-width: 400px) {
+  .team_overview {
+    padding: 4em 0;
+  }
+  .team_overview .team_box_list .team_box {
+    width: 100%;
+    height: 350px;
+  }
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
   .round_Btn {
@@ -2417,6 +2682,25 @@ header .banner-details p {
     width: 100%;
     padding: 1em;
   }
+  Header .banner .aboutus_head_text {
+    margin-top: 100px;
+  }
+  Header .banner .aboutus_head_text h1 {
+    color: #111;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 61px;
+  }
+  Header .banner .aboutus_head_text h1 span {
+    color: #FF5B00;
+    margin-bottom: 48px;
+  }
+  Header .banner .about-banner-details {
+    text-align: justify;
+  }
+  Header .banner .banner_image {
+    width: 100%;
+  }
   .service_box_mbl {
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -2439,6 +2723,35 @@ header .banner-details p {
   }
   .work_box .work_showcase .round_Btn {
     margin-top: 15px;
+  }
+  .project_details .project_overview .container {
+    max-width: auto !important;
+    width: auto !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .project_details .project_content_box h1 {
+    font-size: 46px;
+    line-height: 61px;
+  }
+  .our_role .role_content .para_content {
+    width: 100%;
+  }
+  .fresh_ideas {
+    padding: 4em 2em;
+  }
+  .fresh_ideas h1 {
+    font-size: 46px;
+  }
+  .fresh_ideas .content {
+    width: 100%;
+  }
+  .team_overview {
+    padding: 4em 2em;
+  }
+  .team_overview .team_box_list .team_box {
+    width: 100%;
+    height: 350px;
   }
 }
 
@@ -2567,6 +2880,16 @@ header .banner-details p {
     position: absolute;
     top: 0;
     right: 0;
+  }
+  .project_details .project_overview .container {
+    max-width: auto !important;
+    width: auto !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .project_details .project_overview .container .row {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
   }
 }
 
