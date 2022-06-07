@@ -623,6 +623,9 @@ Header {
       }
     }
   }
+  .tabs-mobile {
+    display: none;
+  }
 }
 
 .we_serve_box {
@@ -767,6 +770,11 @@ Header {
       i {
         font-size: 120px;
         color: $primary;
+      }
+    }
+    .tab-content{
+      &.mobile {
+        display: none
       }
     }
   }
@@ -1434,7 +1442,7 @@ Header {
 }
 
 .higlight_section {
-  margin-top: 80px;
+  // margin-top: 80px;
   font-family: 'Raleway';
   padding: 4em 0;
   .highlight_content {
@@ -1516,6 +1524,31 @@ Header {
         margin-bottom: 0;
       }
     }
+    .mobile_view {
+      display: none;
+      .view_item {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          height: 116px;
+          top: 10px;
+          width: 5px;
+          background-color: $primary;
+          display: inline-block;
+          
+        }
+        &:nth-child(odd) {
+          &::before {
+            background-color: $secondary;
+          }
+        }
+        .inner_item_box {
+          padding-left: 20px;
+          display: inline-block;
+        }
+      }
+    }
   }
 }
 
@@ -1557,7 +1590,6 @@ Header {
 .our_phylosophy {
   .container {
     max-width: calc(((100% - 1140px) / 2) + 1140px) !important;
-    width: calc(((100% - 1140px) / 2) + 1140px) !important;
     margin-right: 0;
     padding-right: 0;
   }
@@ -1690,7 +1722,6 @@ Header {
   height: 850px;
   .container {
     max-width: calc(((100% - 1140px) / 2) + 1140px) !important;
-    width: calc(((100% - 1140px) / 2) + 1140px) !important;
     margin-right: 0;
     padding-right: 0;
     height: 100%;
@@ -1779,7 +1810,6 @@ Header {
   padding: 4em 0;
   .container {
     max-width: calc(((100% - 1140px) / 2) + 1140px) !important;
-    width: calc(((100% - 1140px) / 2) + 1140px) !important;
     margin-right: 0;
     padding-right: 0;
   }

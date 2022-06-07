@@ -9,158 +9,9 @@
           }
         }
       }
+     
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 576px) {
-    .round_Btn {
-        font-size: 14px;
-        &::after {
-            font-size: 8px;
-        }
-    }
-    Header {
-        overflow: hidden;
-        height: auto;
-        .top_Nav_Wrap {
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            .top_Nav {
-                height: auto;
-                .logo_Container {
-                    width: 138px;
-                }
-            }
-        }
-        .mainbanner {
-            .mainbanner-inner {
-                .banner_height {
-                    height: auto;
-                  }
-                flex-wrap: wrap-reverse;
-                align-items: center;
-                .banner_contentbox {
-                    z-index: 1;
-                    width: 94%;
-                    margin: -20px auto 10px auto;
-                    border-radius: 10px;
-                    height: auto;
-                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                    .head_text {
-                        margin-top: 0;
-                        width: 100%;
-                        padding: 1.5em 15px;
-                        h1 {
-                            font-weight: 600;
-                            margin-bottom: 15px;
-                            font-size: 32px;
-                            line-height: 50px;
-                            span {
-                                color: $heading;
-                            }
-                        }
-                        a {
-                            margin-top: 18px;
-                        }
-                    }
-                }
-                .banner_image {
-                    width: 100%;
-                    padding: 1em;
-                }
-            }
-        }
-        .banner {
-            .aboutus_head_text {
-              margin-top: 100px;
-              // max-width: 300px;
-              h1 {
-                color: $heading;
-                font-size: 46px;
-                font-weight: 900;
-                line-height: 61px;
-                span {
-                  color: $primary;
-                  margin-bottom: 48px;
-                }
-              }
-            }
-            .about-banner-details {
-                text-align: justify;
-            }
-            .banner_image {
-                width: 100%;
-            }
-        }
-    }
-    .service_box_mbl {
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-        margin-bottom: 15px;
-        padding: 1em;
-        border-right: 5px solid $primary;
-       &:nth-child(even) {
-        border-right: 5px solid $secondary;
-       }
-    } 
-    .work_box {
-        .works_main_contents {
-            columns: 1;
-            p {
-                text-align: justify;
-            }
-        }
-    }
-    .work_box{
-        .work_showcase {
-            .work_showcase_content {
-                text-align: left;
-            }
-            .round_Btn {
-                margin-top: 15px;
-            }
-        }
-    } 
-    .project_details {
-        .project_overview {
-            .container {
-                max-width: auto!important;
-                width: auto!important;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-        }
-        .project_content_box { 
-            h1 {
-                font-size: 46px;
-                line-height: 61px;
-            }
-        }
-    }
-    .our_role { 
-        .role_content {
-            .para_content {
-                width: 100%;
-            }
-        }
-    }
-    .fresh_ideas { 
-        padding: 4em 2em;
-        h1 {
-            font-size: 46px;
-        }
-        .content {
-            width: 100%;
-        }
-    }
-    .team_overview {
-        padding: 4em 2em;
-        .team_box_list {
-          .team_box {
-            width: 100%;
-            height: 350px;
-          }
-        }
-      }
-       
-}
+
 
 /* small devices (Lablates, 600px and down) */
 @media only screen and (max-width: 768px) {
@@ -189,6 +40,12 @@
                     span {
                         color: $heading;
                     }
+                }
+            }
+            .aboutus_head_text {
+                h1 {
+                    font-size: 7vw;
+                    line-height: 140%;
                 }
             }
         }
@@ -307,11 +164,92 @@
             }
         }
     }
+    .higlight_section {
+        .vision_statement {
+            .mobile_view {
+                display: block!important;
+            } 
+        }
+    }
+    .higlight_section {
+        .vision_statement {
+            .desktop {
+                display: none!important;
+            }
+        }
+    }
+    .our_phylosophy {
+        .container {
+            max-width: 768px;
+        }
+    }
+    
+    .inpiration_section {
+        height: 1064px;
+        .container {
+            max-width: 768px;
+            .inspire_box {
+                flex-direction: column;
+                .inspire_content {
+                    max-width: 75%;
+                    margin-bottom: 30px;
+                }
+                .inspire_lists {
+                    .image_box {
+                        &.seven {
+                            top: 74%;
+                            right: 10%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .our_facts { 
+        .container {
+            max-width: 768px;
+        }
+    }
+}
+@media only screen and (max-width: 992px) { 
+    .our_phylosophy {
+        .container {
+            max-width: 992px;
+        }
+    }
+    
+    .inpiration_section {
+        height: 1064px;
+        .container {
+            max-width: 992px;
+            .inspire_box {
+                flex-direction: column;
+                .inspire_content {
+                    max-width: 75%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+    .our_facts { 
+        .container {
+            max-width: 992px;
+        }
+    }
+    .blog-posts { 
+        p {
+            a {
+                font-size: 5vh;
+            }
+        }
+    }
 }
 @media only screen and (min-width: 1500px) { 
-    Header {
-        height: 960px;
-    }
+    // Header {
+    //     height: 960px;
+    // }
     Header .banner .head_text h1 {
         font-size: 3vw;
         line-height: 87px;
@@ -321,4 +259,226 @@
         font-size: 4vw;
         line-height: 5vw;
       }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+    .round_Btn {
+        font-size: 14px;
+        &::after {
+            font-size: 8px;
+        }
+    }
+    Header {
+        overflow: hidden;
+        height: auto;
+        .top_Nav_Wrap {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            .top_Nav {
+                height: auto;
+                .logo_Container {
+                    width: 138px;
+                }
+            }
+        }
+        .mainbanner {
+            .mainbanner-inner {
+                .banner_height {
+                    height: auto;
+                  }
+                flex-wrap: wrap-reverse;
+                align-items: center;
+                .banner_contentbox {
+                    z-index: 1;
+                    width: 94%;
+                    margin: -20px auto 10px auto;
+                    border-radius: 10px;
+                    height: auto;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    .head_text {
+                        margin-top: 0;
+                        width: 100%;
+                        padding: 1.5em 15px;
+                        h1 {
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                            font-size: 32px;
+                            line-height: 50px;
+                            span {
+                                color: $heading;
+                            }
+                        }
+                        a {
+                            margin-top: 18px;
+                        }
+                    }
+                }
+                .banner_image {
+                    width: 100%;
+                    padding: 1em;
+                }
+            }
+        }
+        .banner {
+            .aboutus_head_text {
+              margin-top: 100px;
+              // max-width: 300px;
+              h1 {
+                color: $heading;
+                font-size: 46px;
+                font-weight: 900;
+                line-height: 61px;
+                span {
+                  color: $primary;
+                  margin-bottom: 48px;
+                }
+              }
+            }
+            .about-banner-details {
+                text-align: justify;
+            }
+            .banner_image {
+                width: 100%;
+            }
+        }
+    }
+    .service_box {
+        .desktop-tabs {
+            display: none;
+        }
+        .tabs-mobile {
+            display: block;
+            .service_box_mbl {
+                border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                margin-bottom: 15px;
+                padding: 1em;
+                border-right: 5px solid $primary;
+               &:nth-child(even) {
+                border-right: 5px solid $secondary;
+               }
+            } 
+        }
+    }
+    .we_serve_box {
+        .serve_inner_box {
+            .d-flex {
+                display: none!important;
+            }
+            .tab-content{
+                &.desktop {
+                    display: none;
+                }
+                &.mobile {
+                  display: block;
+                }
+              }
+        }
+    }
+    
+    .work_box {
+        .works_main_contents {
+            columns: 1;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+    .work_box{
+        .work_showcase {
+            .work_showcase_content {
+                text-align: left;
+            }
+            .round_Btn {
+                margin-top: 15px;
+            }
+        }
+    } 
+    .project_details {
+        .project_overview {
+            .container {
+                max-width: auto!important;
+                width: auto!important;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        .project_content_box { 
+            h1 {
+                font-size: 46px;
+                line-height: 61px;
+            }
+        }
+    }
+    .our_role { 
+        .role_content {
+            .para_content {
+                width: 100%;
+            }
+        }
+    }
+    .fresh_ideas { 
+        padding: 4em 2em;
+        h1 {
+            font-size: 46px;
+        }
+        .content {
+            width: 100%;
+        }
+    }
+    .team_overview {
+        padding: 4em 2em;
+        .team_box_list {
+          .team_box {
+            width: 100%;
+            height: 350px;
+          }
+        }
+    }
+    .inpiration_section {
+        height: 1064px;
+        .container {
+            max-width: 400px;
+            .inspire_box {
+                flex-direction: column;
+                .inspire_content {
+                    max-width: 75%;
+                    margin-bottom: 30px;
+                    h1 {
+                        font-size: 38px;
+                    }
+                }
+                .inspire_lists {
+                    .image_box {
+                        max-width: 91px;
+                        &.image_large {
+                            max-width: 170px;   
+                        }
+                        &.two {
+                            right: 29%;
+                        }
+                        &.four {
+                            top: 40%;
+                            left: 67%;
+                        }
+                        &.five {
+                            top: 23%;
+                            right: 4%;
+                        }
+                        &.six {
+                            top: 62%;
+                            left: 10%;
+                        }
+                        &.seven {
+                            top: 84%;
+                            right: 10%;
+                        }
+                    }
+                    .text_box {
+                        top: 25%;
+                    }
+                }
+            }
+        }
+    }
 }
